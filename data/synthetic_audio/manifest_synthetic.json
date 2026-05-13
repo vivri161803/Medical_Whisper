@@ -1,0 +1,27 @@
+[
+    {
+        "id": "maxillo02_chunk_0000",
+        "text": "L’osteonecrosi è una necrosi avascolare del tessuto osseo, spesso di natura iatrogena (farmaci e radioterapia).",
+        "audio_filepath": "data/synthetic_audio/maxillo02_chunk_0000.wav"
+    },
+    {
+        "id": "maxillo02_chunk_0001",
+        "text": "I farmaci implicati nell’osteonecrosi mascellare sono i bifosfonati e gli inibitori degli enzimi ad azione tirosin – chinasica.",
+        "audio_filepath": "data/synthetic_audio/maxillo02_chunk_0001.wav"
+    },
+    {
+        "id": "maxillo02_chunk_0002",
+        "text": "La presenza di osso esposto è sondabile con una fistola, che può essere intraorale oppure extraorale e persistere per più di 8 settimane.",
+        "audio_filepath": "data/synthetic_audio/maxillo02_chunk_0002.wav"
+    },
+    {
+        "id": "maxillo02_chunk_0003",
+        "text": "I bifosfonati sono usati per via endovenosa in pazienti con metastasi ossee e per via orale per prevenire l’osteoporosi nelle donne in menopausa.",
+        "audio_filepath": "data/synthetic_audio/maxillo02_chunk_0003.wav"
+    },
+    {
+        "id": "maxillo02_chunk_0004",
+        "text": "La necessità di sospendere i bifosfonati risulta essere più semplice da seguire nelle donne in menopausa, mentre nei pazienti con metastasi ossei la cessazione di questo trattamento è molto difficoltosa, dato che determinano numerosi benefici in tali pazienti, quali riduzione delle fratture ossee, del dolore ed un notevole miglioramento della qualità della vita.",
+        "audio_filepath": "data/synthetic_audio/maxillo02_chunk_0004.wav"
+    }
+]

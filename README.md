@@ -217,6 +217,13 @@ pip install git+https://github.com/m-bain/whisperx.git
 ```python
 import torch
 print(torch.backends.mps.is_available())  # Deve essere True
+
+```
+
+Per usare TensorBoard con `uv` quando il comando non viene trovato direttamente, puoi usare `uv run python -m tensorboard.main` oppure, più semplicemente, invocare il modulo tramite python:
+
+```bash
+uv run python -m tensorboard.main --logdir outputs/whisper-medical
 ```
 
 ### Pochi segmenti dopo il filtro
