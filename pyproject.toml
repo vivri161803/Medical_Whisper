@@ -6,11 +6,14 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "accelerate>=1.13.0",
+    "audiomentations>=0.43.1",
     "datasets>=4.8.5",
     "evaluate>=0.4.6",
     "jiwer>=4.0.0",
     "librosa>=0.11.0",
     "nltk>=3.9.4",
+    "pydantic>=2.13.4",
+    "pytest>=9.0.3",
     "pyyaml>=6.0.3",
     "rapidfuzz>=3.14.5",
     "silero-vad>=6.2.1",
@@ -24,4 +27,5 @@ dependencies = [
     "tqdm>=4.67.3",
     "transformers<4.41.0",
     "tts>=0.21.0",
+    "typer>=0.25.1",
 ]

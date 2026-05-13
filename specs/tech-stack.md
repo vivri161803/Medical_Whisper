@@ -26,3 +26,9 @@ L'infrastruttura tecnologica del progetto si concentra sull'ecosistema Python pe
 - **Tqdm**: Barre di progresso visive per monitorare l'avanzamento dei task di processamento sequenziale.
 - **PyYAML**: Lettura e gestione dei file di configurazione dichiarativa (`training_config.yaml`).
 - **TensorBoard**: Tracciamento dei log di addestramento e monitoraggio delle metriche (loss, WER) nel tempo.
+
+## Validazione, Testing e Data Augmentation
+- **Pydantic**: Validazione rigorosa e definizione dei contratti dei dati per l'implementazione SDD (Spec-Driven Development).
+- **Pytest**: Framework per la scrittura e l'esecuzione di test funzionali e validazione delle specifiche.
+- **Audiomentations**: Creazione di pipeline componibili per perturbare e simulare condizioni di disturbo sul segnale audio.
+- **Typer**: Sviluppo di interfacce CLI (Command Line Interface) tipizzate e robuste per l'orchestrazione dei batch.

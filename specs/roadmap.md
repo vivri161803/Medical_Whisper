@@ -16,11 +16,17 @@ La roadmap è organizzata in fasi di lavoro logiche e sequenziali, rispecchiando
 - [x] Salvataggio del dataset audio purificato in `data/filtered/` con relativo `manifest_filtered.json`.
 
 ## Fase 3 (Pivot): Generazione Dataset Audio Sintetico
-- [ ] Sviluppo di uno script per la pulizia (text preparation) dei testi raw estratti da PDF.
-- [ ] Implementazione di un sistema di "hybrid chunking" per dividere il testo ripulito in spezzoni ideali (1-30 secondi).
-- [ ] Configurazione del modello Text-to-Speech locale `Coqui XTTS_v2`.
-- [ ] Sviluppo di uno script per generare i file `.wav` e il file `manifest_synthetic.json`.
-- [ ] Validazione manuale a campione della pronuncia e della qualità del dataset generato.
+- [x] Sviluppo di uno script per la pulizia (text preparation) dei testi raw estratti da PDF.
+- [x] Implementazione di un sistema di "hybrid chunking" per dividere il testo ripulito in spezzoni ideali (1-30 secondi).
+- [x] Configurazione del modello Text-to-Speech locale `Coqui XTTS_v2`.
+- [x] Sviluppo di uno script per generare i file `.wav` e il file `manifest_synthetic.json`.
+- [x] Validazione manuale a campione della pronuncia e della qualità del dataset generato.
+
+## Fase 3.5: Data Augmentation
+- [ ] Definizione dei modelli dati (Pydantic) per la validazione di manifest in ingresso e in uscita.
+- [ ] Implementazione della pipeline `ClassroomAugmenter` usando `audiomentations` (Reverb, Background Noise, BandPass, Volume Fluctuation).
+- [ ] Scrittura dei test (pytest) per verificare i requisiti spettrali, dinamici e i vincoli rigidi sulla durata dell'audio (<= 30s).
+- [ ] Integrazione dello script CLI tramite `Typer` per l'orchestrazione del processing batch.
 
 ## Fase 4: Fine-Tuning e Valutazione 
 - [ ] Sviluppo dello script di training `03_finetune.py`.
