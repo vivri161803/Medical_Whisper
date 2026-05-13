@@ -10,6 +10,7 @@ La pipeline si compone di **3 step** sequenziali:
 |------|--------|-------------|
 | 1 | `scripts/01_chunk_and_align.py` | Segmenta audio lunghi e allinea con le trascrizioni manuali |
 | 2 | `scripts/02_filter_quality.py` | Filtra segmenti vuoti, silenziosi o troppo rumorosi |
+| 2.5 | `data/augmentation/cli.py` | Data Augmentation acustica (rumore aula, riverbero) per dataset sintetici |
 | 3 | `scripts/03_finetune.py` | Fine-tuning di Whisper Small sui segmenti validati |
 
 ## 📁 Struttura del Progetto
@@ -25,7 +26,9 @@ Whisper/
 ├── data/
 │   ├── raw/                    # ⬅️ Metti qui i tuoi audio + .txt
 │   ├── chunks/                 # Segmenti generati (Step 1)
-│   └── filtered/               # Segmenti filtrati (Step 2)
+│   ├── filtered/               # Segmenti filtrati (Step 2)
+│   ├── synthetic_audio/        # Dataset sintetici generati da TTS
+│   └── augmentation/           # Codice e risorse per augmentation (ir, backnoise)
 ├── outputs/
 │   └── whisper-medical/        # Modello fine-tunato (Step 3)
 ├── pyproject.toml
@@ -63,17 +66,20 @@ Le seguenti librerie Python sono necessarie:
 | `librosa` | latest | Analisi audio |
 | `pyyaml` | latest | Parsing configurazione |
 | `tqdm` | latest | Progress bars |
+| `audiomentations` | latest | Augmentation audio (noise, reverb, eq) |
+| `pydantic` | latest | Validazione rigorosa dati (SDD) |
+| `typer` | latest | Interfacce CLI robuste |
 
 ### Installazione dipendenze
 
 ```bash
 # Con pip
 pip install whisperx rapidfuzz silero-vad soundfile librosa pyyaml tqdm \
-            datasets accelerate evaluate jiwer
+            datasets accelerate evaluate jiwer audiomentations pydantic typer
 
 # Oppure con uv (consigliato)
 uv add whisperx rapidfuzz silero-vad soundfile librosa pyyaml tqdm \
-       datasets accelerate evaluate jiwer
+       datasets accelerate evaluate jiwer audiomentations pydantic typer
 ```
 
 > **Nota:** `torch`, `torchaudio` e `transformers` sono già definiti in `pyproject.toml`.
@@ -158,6 +164,32 @@ python scripts/02_filter_quality.py \
 | `--min_duration` | `1.0` | Durata minima (secondi) |
 | `--max_duration` | `30.0` | Durata massima (secondi) |
 | `--min_similarity` | `50.0` | Similarity score minimo (%) |
+
+---
+
+### Step 2.5 — Data Augmentation (Synthetic Dataset)
+
+Sviluppata seguendo principi **Spec-Driven Development (SDD)**, questa pipeline permette di irrobustire modelli addestrati su voce sintetica "troppo pulita", iniettando rumori e disturbi tipici di un'aula universitaria (Classroom scenario).
+
+```bash
+PYTHONPATH=. uv run python data/augmentation/cli.py data/synthetic_audio/manifest_synthetic.json \
+    --intensity 0.7 \
+    --p-reverb 0.8 \
+    --p-noise 0.9 \
+    --p-bandpass 0.3 \
+    --p-gain 0.5
+```
+
+**Cosa fa:**
+1. **Validazione Pydantic**: Controlla rigorosamente che il formato del manifest di input sia corretto e mappa automaticamente alias storici (`audio_filepath` -> `audio_path`).
+2. **Logica Probabilistica a Controllo di Degrado**: Esegue una pipeline con 4 tipi di alterazioni indipendenti controllate da flag CLI (riverbero, rumore tastiere/colpi di tosse, banda limitata, variazioni di volume).
+3. **Hard Constraint**: Indipendentemente dalle probabilità, non verranno MAI applicati più di **2 filtri contemporaneamente** allo stesso audio. Questo evita di danneggiare troppo l'intelligibilità del discorso.
+4. **Resampling sicuro**: Legge i file audio originali a qualsiasi frequenza, ricampionandoli automaticamente alla `sample_rate` voluta (`16000` di default) senza "rallentare" le voci.
+5. Esporta un manifesto aggiornato e un batch di audio alterati per procedere alla fase di training.
+
+**Parametri CLI utili:**
+- `--intensity` (default: 1.0): Modula l'aggressività delle alterazioni (es. abbassa drasticamente il Signal-to-Noise Ratio).
+- `--p-*` (default: 0.5/0.8): Probabilità di attivazione per ogni singolo filtro.
 
 ---
 
