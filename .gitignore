@@ -6,13 +6,15 @@ dist/
 wheels/
 *.egg-info
 
-# Virtual environments
+# Virtual environments & enviroment variables
 .venv
+.env
 
 # Dati audio e segmenti
 data/raw/
 data/chunks/
 data/filtered/
+data/
 
 # Output modelli
 outputs/
@@ -38,3 +40,6 @@ runs/
 
 # macOS
 .DS_Store
+
+# wandb
+wandb
