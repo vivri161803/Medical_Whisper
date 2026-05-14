@@ -4,33 +4,43 @@ Pipeline per il fine-tuning di OpenAI Whisper, specializzata nel riconoscimento 
 
 ## 📋 Panoramica
 
-La pipeline si compone di **3 step** sequenziali:
+La pipeline si compone di **7 step** sequenziali:
 
 | Step | Script | Descrizione |
 |------|--------|-------------|
-| 1 | `scripts/01_chunk_and_align.py` | Segmenta audio lunghi e allinea con le trascrizioni manuali |
-| 2 | `scripts/02_filter_quality.py` | Filtra segmenti vuoti, silenziosi o troppo rumorosi |
-| 2.5 | `data/augmentation/cli.py` | Data Augmentation acustica (rumore aula, riverbero) per dataset sintetici |
-| 3 | `scripts/03_finetune.py` | Fine-tuning di Whisper Small sui segmenti validati |
+| 1 | `scripts/01_prepare_text.py` | Pulizia testi raw e chunking per TTS |
+| 2 | `scripts/02_generate_audio.py` | Generazione audio sintetico con XTTS_v2 |
+| 2.5 | `data/augmentation/cli.py` | Data Augmentation acustica (rumore aula, riverbero) |
+| 3 | `scripts/03_data_contracts.py` | Validazione Pydantic del dataset (16kHz, mono, ≤30s) |
+| 4 | `scripts/04_metrics.py` | WER standard + Medical WER pesato |
+| 5 | `scripts/05_baseline_benchmark.py` | Benchmark zero-shot con mlx-whisper |
+| 6 | `scripts/06_preprocess_mlx.py` | Estrazione log-Mel + split train/val/test |
+| 7 | `scripts/07_finetune_mlx.py` | Fine-tuning LoRA nativo MLX con W&B |
 
 ## 📁 Struttura del Progetto
 
 ```
 Whisper/
 ├── scripts/
-│   ├── 01_chunk_and_align.py   # Segmentazione + allineamento WhisperX
-│   ├── 02_filter_quality.py    # Filtro qualità VAD + SNR
-│   └── 03_finetune.py          # Fine-tuning Whisper
-├── configs/
-│   └── training_config.yaml    # Iperparametri di training
+│   ├── 01_prepare_text.py        # Pulizia testi + chunking
+│   ├── 02_generate_audio.py      # Generazione audio sintetico
+│   ├── 03_data_contracts.py      # Validazione Pydantic dataset
+│   ├── 04_metrics.py             # WER + Medical WER
+│   ├── 05_baseline_benchmark.py  # Benchmark zero-shot
+│   ├── 06_preprocess_mlx.py      # Feature extraction + split
+│   ├── 07_finetune_mlx.py        # Fine-tuning LoRA MLX
+│   └── config_loader.py          # Loader per training_config.yaml
+├── training_config.yaml          # Iperparametri centralizzati
 ├── data/
-│   ├── raw/                    # ⬅️ Metti qui i tuoi audio + .txt
-│   ├── chunks/                 # Segmenti generati (Step 1)
-│   ├── filtered/               # Segmenti filtrati (Step 2)
-│   ├── synthetic_audio/        # Dataset sintetici generati da TTS
-│   └── augmentation/           # Codice e risorse per augmentation (ir, backnoise)
-├── outputs/
-│   └── whisper-medical/        # Modello fine-tunato (Step 3)
+│   ├── raw/                      # Audio + .txt originali
+│   ├── synthetic_audio/          # Dataset sintetici (TTS)
+│   ├── augmented_audio/          # Dataset con augmentation
+│   ├── preprocessed/             # Feature log-Mel (train/val/test)
+│   ├── medical_terms.txt         # Glossario termini medici
+│   └── augmentation/             # Pipeline augmentation
+├── outputs/                      # Adapter LoRA + report
+├── tests/                        # Smoke test per ogni script
+├── specs/                        # Spec-Driven Development docs
 ├── pyproject.toml
 └── README.md
 ```
@@ -48,41 +58,28 @@ brew install ffmpeg
 
 ## 📦 Dipendenze
 
-Le seguenti librerie Python sono necessarie:
+Le dipendenze principali sono gestite in `pyproject.toml`.
 
-| Libreria | Versione | Uso |
-|----------|----------|-----|
-| `whisperx` | latest | Trascrizione + forced alignment |
-| `torch` | ≥2.11.0 | Backend ML (già in pyproject.toml) |
-| `torchaudio` | ≥2.11.0 | Elaborazione audio (già in pyproject.toml) |
-| `transformers` | ≥5.8.0 | Fine-tuning Whisper (già in pyproject.toml) |
-| `datasets` | latest | Gestione dataset HuggingFace |
-| `accelerate` | latest | Training ottimizzato |
-| `evaluate` | latest | Metriche (WER) |
-| `jiwer` | latest | Calcolo Word Error Rate |
-| `rapidfuzz` | latest | Fuzzy matching testo |
-| `silero-vad` | latest | Voice Activity Detection |
-| `soundfile` | latest | Lettura/scrittura WAV |
-| `librosa` | latest | Analisi audio |
-| `pyyaml` | latest | Parsing configurazione |
-| `tqdm` | latest | Progress bars |
-| `audiomentations` | latest | Augmentation audio (noise, reverb, eq) |
-| `pydantic` | latest | Validazione rigorosa dati (SDD) |
-| `typer` | latest | Interfacce CLI robuste |
+| Libreria | Uso | Fase |
+|----------|-----|------|
+| `mlx` | Framework ML Apple Silicon | 4 |
+| `mlx-whisper` | Inferenza Whisper ottimizzata | 4 |
+| `wandb` | Tracking training/eval | 4 |
+| `jiwer` | Word Error Rate + Medical WER | 4 |
+| `librosa` | Feature extraction log-Mel | 4 |
+| `pydantic` | Contratti dati SDD | 3.5, 4 |
+| `torch` / `torchaudio` | Backend per Fasi 1–3 | 1–3 |
+| `soundfile` | Lettura/scrittura WAV | tutte |
+| `audiomentations` | Augmentation audio | 3.5 |
 
-### Installazione dipendenze
+### Installazione
 
 ```bash
-# Con pip
-pip install whisperx rapidfuzz silero-vad soundfile librosa pyyaml tqdm \
-            datasets accelerate evaluate jiwer audiomentations pydantic typer
-
-# Oppure con uv (consigliato)
-uv add whisperx rapidfuzz silero-vad soundfile librosa pyyaml tqdm \
-       datasets accelerate evaluate jiwer audiomentations pydantic typer
+# Installazione con uv (consigliato)
+uv sync
 ```
 
-> **Nota:** `torch`, `torchaudio` e `transformers` sono già definiti in `pyproject.toml`.
+> **Nota:** tutte le dipendenze sono dichiarate in `pyproject.toml`. `uv sync` installa tutto automaticamente.
 
 ## 🚀 Uso
 
@@ -193,70 +190,86 @@ PYTHONPATH=. uv run python data/augmentation/cli.py data/synthetic_audio/manifes
 
 ---
 
-### Step 3 — Fine-Tuning
-
+### Step 3 — Validazione Dataset
 ```bash
-python scripts/03_finetune.py \
-    --data_dir data/filtered \
-    --config configs/training_config.yaml
+PYTHONPATH=. uv run python scripts/03_data_contracts.py data/augmented_audio/dataset_augmented.jsonl --verbose
 ```
 
-**Cosa fa:**
-1. Carica `openai/whisper-small` e il processor per italiano
-2. Crea dataset PyTorch dai segmenti filtrati (log-Mel spectrograms + labels)
-3. Split automatico 90/10 train/validation
-4. Allena il modello con `Seq2SeqTrainer`
-5. Valuta con WER (Word Error Rate) ad ogni epoca
-6. Salva il miglior modello in `outputs/whisper-medical/final/`
-
-**Monitoraggio training con TensorBoard:**
+### Step 4 — Baseline Benchmark (Zero-Shot)
 ```bash
-tensorboard --logdir outputs/whisper-medical
+PYTHONPATH=. uv run python scripts/05_baseline_benchmark.py \
+    --manifest data/augmented_audio/dataset_augmented.jsonl \
+    --medical-terms data/medical_terms.txt \
+    --output-dir outputs
 ```
 
-### Configurazione Training
+### Step 5 — Preprocessing
+```bash
+PYTHONPATH=. uv run python scripts/06_preprocess_mlx.py \
+    --manifest data/augmented_audio/dataset_augmented.jsonl \
+    --output-dir data/preprocessed
+```
 
-Gli iperparametri sono in `configs/training_config.yaml`. I principali:
+### Step 6 — Fine-Tuning LoRA
+```bash
+PYTHONPATH=. uv run python scripts/07_finetune_mlx.py --config training_config.yaml
+```
+
+### ⚙️ Configurazione Training
+
+Gli iperparametri sono centralizzati in `training_config.yaml`:
 
 | Parametro | Default | Descrizione |
 |-----------|---------|-------------|
-| `model_name` | `openai/whisper-small` | Modello base |
-| `learning_rate` | `1e-5` | Learning rate |
-| `per_device_train_batch_size` | `4` | Batch size per device |
-| `gradient_accumulation_steps` | `4` | Effective batch = 16 |
-| `num_train_epochs` | `10` | Numero epoche |
-| `fp16` | `false` | Disabilitato per MPS |
+| `model.name` | `mlx-community/whisper-small-mlx` | Modello base |
+| `lora.rank` | `32` | Rank LoRA |
+| `lora.alpha` | `64` | Alpha LoRA |
+| `training.batch_size` | `4` | Batch size (M1 Pro 16GB) |
+| `training.learning_rate` | `1e-5` | Learning rate |
+| `training.num_epochs` | `3` | Numero epoche |
+| `evaluation.eval_every_n_steps` | `50` | Frequenza evaluation |
+| `evaluation.medical_weight` | `3.0` | Peso errori termini medici |
 
-> Per usare un modello più grande su GPU NVIDIA, cambia `model_name` a `openai/whisper-medium`, abilita `fp16: true`, e aumenta il batch size.
+### 📊 Weights & Biases Setup
+
+Il training logga automaticamente su [Weights & Biases](https://wandb.ai) per tracciare loss, WER e Medical WER.
+
+#### 1. Login (una tantum)
+```bash
+wandb login
+```
+Inserisci la tua API key quando richiesto.
+
+#### 2. Configurazione
+Il progetto e l'entity W&B sono configurabili in `training_config.yaml`:
+```yaml
+wandb:
+  project: "whisper-medical-finetuning"
+  entity: null  # il tuo username wandb
+```
+
+#### 3. Modalità Offline
+Per eseguire senza W&B (logging solo su CLI):
+```bash
+WANDB_MODE=disabled PYTHONPATH=. uv run python scripts/07_finetune_mlx.py --config training_config.yaml
+```
+
+Oppure usa il flag `--no-wandb` nello script di benchmark:
+```bash
+PYTHONPATH=. uv run python scripts/05_baseline_benchmark.py --manifest ... --medical-terms ... --no-wandb
+```
 
 ## 🔍 Troubleshooting
 
 ### WhisperX non si installa
 ```bash
-# Assicurati di avere ffmpeg
-ffmpeg -version
-
-# Installa da source se pip fallisce
+brew install ffmpeg
 pip install git+https://github.com/m-bain/whisperx.git
 ```
 
-### Errore "MPS out of memory"
-- Riduci `per_device_train_batch_size` a `2` nel config YAML
-- Riduci `--batch_size` nello Step 1
-
-### Training troppo lento su CPU
-- Assicurati che PyTorch sia compilato con supporto MPS:
-```python
-import torch
-print(torch.backends.mps.is_available())  # Deve essere True
-
-```
-
-Per usare TensorBoard con `uv` quando il comando non viene trovato direttamente, puoi usare `uv run python -m tensorboard.main` oppure, più semplicemente, invocare il modulo tramite python:
-
-```bash
-uv run python -m tensorboard.main --logdir outputs/whisper-medical
-```
+### Errore "MLX out of memory"
+- Riduci `training.batch_size` a `2` in `training_config.yaml`
+- Riduci `lora.rank` a `16`
 
 ### Pochi segmenti dopo il filtro
 - Abbassa `--min_speech_ratio` (es. `0.2`)

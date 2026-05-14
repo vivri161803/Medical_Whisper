@@ -1,0 +1,40 @@
+# ===========================================================================
+# training_config.yaml — Configurazione centralizzata per il fine-tuning LoRA
+# ===========================================================================
+# Ottimizzato per Apple M1 Pro con 16GB di RAM unificata.
+
+model:
+  name: "mlx-community/whisper-small-mlx"
+  language: "it"
+
+lora:
+  rank: 32
+  alpha: 64
+  dropout: 0.05
+  target_modules: ["query", "value"]
+
+training:
+  batch_size: 4
+  learning_rate: 1.0e-5
+  num_epochs: 3
+  optimizer: "adamw"
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  precision: "float16"
+
+evaluation:
+  eval_every_n_steps: 50
+  save_every_n_steps: 100
+  medical_terms_path: "data/medical_terms.txt"
+  medical_weight: 3.0
+
+data:
+  preprocessed_dir: "data/preprocessed"
+  output_dir: "outputs"
+  seed: 42
+  split_ratios: [0.8, 0.1, 0.1]
+
+wandb:
+  project: "whisper-medical-finetuning"
+  entity: null  # auto-detect (models-university-of-florence)
+  run_name: null  # auto-generato se null
