@@ -12,9 +12,9 @@ Implementare l'intera pipeline di fine-tuning del modello `whisper-small` in mod
 - Le dipendenze legacy (`accelerate`, `tensorboard`, `torchvision`, `torchcodec`) saranno deprecate nel `pyproject.toml` (mantenute solo se necessarie a script delle Fasi 1–3).
 
 ### D2: LoRA (Low-Rank Adaptation)
-- Si applica LoRA esclusivamente ai layer `q_proj` e `v_proj` dell'encoder e decoder di Whisper.
+- Si applica LoRA esclusivamente ai layer `query` e `value` dell'encoder e decoder di Whisper (nomi effettivi nel modello `whisper-small-mlx`; le spec originali indicavano `q_proj`/`v_proj` ma non corrispondono ai nomi reali dei layer).
 - Configurazione default: `rank=32`, `alpha=64`, `dropout=0.05`.
-- Solo i pesi LoRA sono addestrabili (`requires_grad = True`); il modello base è congelato tramite `model.freeze()`.
+- Solo i pesi LoRA sono addestrabili; il modello base è congelato tramite `model.freeze()`.
 
 ### D3: Modello Base
 - **`whisper-small`** (multilingual) come checkpoint di partenza.
@@ -66,10 +66,12 @@ Implementare l'intera pipeline di fine-tuning del modello `whisper-small` in mod
 
 ### `06_preprocess_mlx.py` — Preprocessing e Split
 
-- **Feature Extraction:** Log-Mel spettrogramma a 80 canali (configurazione standard Whisper), calcolato con `librosa` e salvato come `mlx.core.array` in file `.npz`.
-- **Tokenizzazione:** Tramite il tokenizer di `whisper` (vocabolario multilingue).
+- **Feature Extraction:** Log-Mel spettrogramma a 80 canali calcolato con `mlx_whisper.audio.log_mel_spectrogram()` (pipeline nativa del modello). Output in formato `(n_frames, n_mels)` = `(3000, 80)` per compatibilità diretta con il decoder.
+- **Tokenizzazione:** Tramite `transformers.WhisperTokenizer` (vocabolario multilingue, lingua italiana).
 - **Split:** 80/10/10 (train/val/test) con seed deterministico, salvato in sottocartelle `data/preprocessed/{train,val,test}/`.
 - **Padding:** Frame audio allineati a 3000 (30 secondi × 100 frame/s). Token di padding etichettati come `-100` per essere ignorati dalla loss.
+
+> ⚠️ **Non usare librosa per le mel features.** Librosa produce mel in scala dB `[-80, 0]`, mentre `mlx_whisper.audio` usa una scala normalizzata `~[-1, 2]`. Il mismatch di scala produce WER = 1.0 durante l'evaluation.
 
 ### `07_finetune_mlx.py` — Training Loop LoRA
 
@@ -91,9 +93,11 @@ Implementare l'intera pipeline di fine-tuning del modello `whisper-small` in mod
 | `max_grad_norm` | 1.0 |
 
 - **Training Loop:** `mlx.nn.value_and_grad()` → `optimizer.update()` → `mx.eval()`.
-- **Evaluation intra-training:** Ogni `eval_every_n_steps`, fusione temporanea LoRA → inferenza sul val set → calcolo Medical WER.
-- **Checkpointing:** Salvataggio di `adapters.npz` (solo pesi LoRA) ogni `save_every_n_steps`.
-- **Logging:** Integrazione `wandb.log()` per loss, WER, Medical WER, learning rate ad ogni step.
+- **Evaluation intra-training:**
+  - Ogni `eval_every_n_steps`: calcolo val_loss (forward pass).
+  - **A fine epoca**: trascrizione autoregressiva del val set tramite `mlx_whisper.decoding.decode(fp16=False)` → calcolo WER e Medical WER.
+- **Checkpointing:** Salvataggio di `adapters_stepN.safetensors` (solo pesi LoRA) ogni `save_every_n_steps`. Formato `.safetensors` via `mx.save_safetensors()`.
+- **Logging:** Integrazione `wandb.log()` per loss, WER, Medical WER, grad_norm ad ogni step/epoca.
 
 ### `training_config.yaml` — Configurazione Centralizzata
 
@@ -106,7 +110,7 @@ lora:
   rank: 32
   alpha: 64
   dropout: 0.05
-  target_modules: ["q_proj", "v_proj"]
+  target_modules: ["query", "value"]  # nomi effettivi nel modello whisper-small-mlx
 
 training:
   batch_size: 4

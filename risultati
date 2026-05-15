@@ -1,7 +1,0 @@
-wandb: Run summary:
-wandb:      baseline/medical_wer 0.2
-wandb: baseline/medical_wer_mean 0.2301
-wandb:              baseline/wer 0.2
-wandb:         baseline/wer_mean 0.2279
-wandb: 
-

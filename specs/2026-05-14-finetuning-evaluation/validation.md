@@ -32,21 +32,32 @@ L'implementazione si intende validata e pronta per il merge quando **tutti** i s
 
 - **Azione:** Generare 5 file audio sintetici (rumore bianco 3s, 16kHz) con testi fittizi. Eseguire `06_preprocess_mlx.py` con split 80/10/10.
 - **Risultato Atteso:**
-  - Le feature log-Mel hanno shape `(80, N)` dove N ≤ 3000.
-  - Dopo padding, la dimensione è esattamente `(80, 3000)`.
+  - Le feature log-Mel hanno shape `(N, 80)` dove N ≤ 3000 (formato nativo mlx-whisper: `n_frames, n_mels`).
+  - Dopo padding, la dimensione è esattamente `(3000, 80)`.
   - I token di padding nel label sono `-100`.
   - I file `.npz` vengono creati nelle 3 sottocartelle (`train/`, `val/`, `test/`).
   - Le 3 sottocartelle sono non vuote (almeno 1 file ciascuna con 5 sample e seed fisso).
 
 ## 5. Validazione Fine-Tuning LoRA (`test_finetune_mlx.py`)
 
-- **Azione:** Creare un modello mock minimale (1 layer di self-attention con `q_proj` e `v_proj`). Applicare LoRA con rank=4. Eseguire 2 iterazioni di training con batch di dati randomici.
+- **Azione:** Creare un modello mock minimale (1 layer di self-attention con `query` e `value`). Applicare LoRA con rank=4. Eseguire 2 iterazioni di training con batch di dati randomici.
 - **Risultato Atteso:**
   - Dopo `model.freeze()` + applicazione LoRA, solo i parametri LoRA risultano trainabili.
   - Il rapporto `trainable / total` parametri è < 5%.
   - Dopo 2 step di training, la loss non è `NaN` né `Inf`.
   - Il file `adapters.npz` viene salvato con successo.
   - Il file `adapters.npz` è ricaricabile e contiene le chiavi dei parametri LoRA.
+
+## 6. Validazione WER Evaluation (`test_finetune_mlx.py::TestWEREvaluation`)
+
+- **Azione:** Caricare il modello Whisper reale e i dati di validazione preprocessati. Eseguire la trascrizione autoregressiva e calcolare le metriche.
+- **Risultato Atteso:**
+  - Le mel features sono in formato nativo `(3000, 80)` con scala `~[-1, 2]`.
+  - I token di riferimento decodificano in testo non vuoto.
+  - `whisper_decode` con `fp16=False` produce testo valido.
+  - `whisper_decode` con `fp16=True` lancia `TypeError` (regression guard).
+  - La WER su singolo campione è < 1.0.
+  - `compute_epoch_wer` restituisce `eval/wer` e `eval/medical_wer` entrambi < 1.0.
 
 ---
 

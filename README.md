@@ -105,62 +105,48 @@ transvalvolare medio di 45 mmHg e area valvolare calcolata...
 
 ---
 
-### Step 1 — Segmentazione e Allineamento
+### Step 1 — Preparazione Testo
 
 ```bash
-python scripts/01_chunk_and_align.py \
-    --input_dir data/raw \
-    --output_dir data/chunks \
-    --language it \
-    --model_size small
+uv run python scripts/01_prepare_text.py
 ```
 
 **Cosa fa:**
-1. Trascrive l'audio con WhisperX per ottenere timestamp approssimativi
-2. Esegue forced alignment per timestamp word-level precisi
-3. Per ogni segmento, cerca la corrispondenza più simile nella trascrizione manuale usando fuzzy matching
-4. Sostituisce il testo WhisperX con il testo della trascrizione manuale (il ground truth corretto)
-5. Salva i segmenti audio WAV (16kHz mono) in `data/chunks/`
-6. Genera `manifest.json` con metadati di ogni segmento
+1. Legge tutti i file `.txt` da `data/raw/` (trascrizioni mediche da PDF)
+2. **Pulizia testuale**: rimuove sillabazioni a capo, spazi multipli, artefatti da PDF
+3. **Sentence tokenization** con NLTK per la lingua italiana
+4. **Hybrid Chunking**: raggruppa le frasi in chunk di 15-35 parole, rispettando il limite di 200 caratteri (vincolo XTTS_v2 per l'italiano). Le frasi troppo lunghe vengono spezzate su virgole e punti e virgola
+5. Genera `data/synthetic_chunks/manifest_text.json` con i chunk testuali
 
-**Parametri opzionali:**
+**Parametri di chunking** (configurabili nel sorgente):
 
 | Parametro | Default | Descrizione |
 |-----------|---------|-------------|
-| `--input_dir` | `data/raw` | Cartella con audio + .txt |
-| `--output_dir` | `data/chunks` | Cartella output segmenti |
-| `--language` | `it` | Codice lingua |
-| `--model_size` | `small` | Dimensione modello WhisperX |
-| `--min_similarity` | `60` | Soglia minima fuzzy matching (%) |
-| `--batch_size` | `16` | Batch size per WhisperX |
+| `min_words` | `15` | Parole minime per chunk |
+| `max_words` | `35` | Parole massime per chunk |
+| `max_chars` | `200` | Caratteri massimi (limite XTTS_v2) |
 
 ---
 
-### Step 2 — Filtro Qualità
+### Step 2 — Generazione Audio Sintetico (Coqui XTTS_v2)
 
 ```bash
-python scripts/02_filter_quality.py \
-    --input_dir data/chunks \
-    --output_dir data/filtered
+uv run python scripts/02_generate_audio.py
 ```
 
+> Richiede un file di riferimento vocale `data/raw/reference_voice.wav` per il voice cloning.
+> XTTS_v2 supporta solo **CUDA** e **CPU** (MPS non supportato). Su Mac, l'inferenza avviene su CPU.
+
 **Cosa fa:**
-1. **VAD (Silero)**: Rileva la percentuale di parlato — scarta se < 30%
-2. **SNR**: Stima il rapporto segnale/rumore — scarta se < 10 dB
-3. **Durata**: Scarta segmenti < 1s o > 30s
-4. **Similarity**: Scarta segmenti con allineamento troppo scarso
-5. Copia i segmenti che passano tutti i filtri in `data/filtered/`
-6. Genera `manifest_filtered.json`
+1. Carica il manifest testuale da `data/synthetic_chunks/manifest_text.json`
+2. Inizializza il modello **Coqui XTTS_v2** (multilingual, voice cloning)
+3. Per ogni chunk, genera audio `.wav` con la voce clonata dal riferimento
+4. **Resume-safe**: salta automaticamente i chunk già generati (utile per riprendere dopo interruzioni)
+5. Salva gli audio in `data/synthetic_audio/` e genera `data/synthetic_audio/manifest_synthetic.json`
 
-**Parametri opzionali:**
-
-| Parametro | Default | Descrizione |
-|-----------|---------|-------------|
-| `--min_speech_ratio` | `0.3` | % minima di parlato |
-| `--min_snr` | `10.0` | SNR minimo in dB |
-| `--min_duration` | `1.0` | Durata minima (secondi) |
-| `--max_duration` | `30.0` | Durata massima (secondi) |
-| `--min_similarity` | `50.0` | Similarity score minimo (%) |
+**Output:**
+- `data/synthetic_audio/*.wav` — Audio sintetici (24kHz, mono)
+- `data/synthetic_audio/manifest_synthetic.json` — Manifest con `{id, text, audio_filepath}`
 
 ---
 

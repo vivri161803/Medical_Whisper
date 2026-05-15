@@ -308,21 +308,21 @@ def compute_epoch_wer(
 
         # Trascrizione autoregressiva con il modello LoRA
         try:
-            # Il decoder mlx-whisper richiede float16
-            mel_fp16 = mel.astype(mx.float16)
+            # fp16=False: l'encoder produce features float32, il decoder deve accettarle
             options = DecodingOptions(
                 language="it",
                 task="transcribe",
                 without_timestamps=True,
-                fp16=True,
+                fp16=False,
             )
-            result = whisper_decode(model, mel_fp16, options)
+            result = whisper_decode(model, mel, options)
 
             if isinstance(result, list):
                 hypothesis = result[0].text.strip()
             else:
                 hypothesis = result.text.strip()
-        except Exception:
+        except Exception as e:
+            print(f"    ⚠️  Decode fallito per {f}: {e}")
             hypothesis = ""
 
         # Calcola metriche

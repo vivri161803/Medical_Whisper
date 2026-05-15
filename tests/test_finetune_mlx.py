@@ -197,3 +197,156 @@ class TestCheckpointing:
         assert len(loaded) > 0
         for key in loaded:
             assert "lora" in key
+
+
+# ---------------------------------------------------------------------------
+# Test WER Evaluation
+# ---------------------------------------------------------------------------
+
+compute_epoch_wer = _ft.compute_epoch_wer
+
+
+class TestWEREvaluation:
+    """Test per la funzione compute_epoch_wer — verifica che la pipeline
+    di trascrizione autoregressiva + calcolo metriche funzioni end-to-end."""
+
+    @pytest.fixture(scope="class")
+    def whisper_model(self):
+        """Carica il modello Whisper una sola volta per tutti i test della classe."""
+        from mlx_whisper.load_models import load_model
+        model = load_model("mlx-community/whisper-small-mlx", dtype=mx.float32)
+        mx.eval(model.parameters())
+        return model
+
+    @pytest.fixture(scope="class")
+    def tokenizer(self):
+        """Carica il tokenizer Whisper."""
+        from transformers import WhisperTokenizer
+        return WhisperTokenizer.from_pretrained(
+            "openai/whisper-small", language="it", task="transcribe"
+        )
+
+    @pytest.fixture(scope="class")
+    def val_files(self):
+        """Restituisce i file di validazione preprocessati."""
+        val_dir = "data/preprocessed/val"
+        if not os.path.exists(val_dir):
+            pytest.skip("data/preprocessed/val non trovata — esegui 06_preprocess_mlx.py prima")
+        files = sorted([
+            os.path.join(val_dir, f)
+            for f in os.listdir(val_dir)
+            if f.endswith(".npz")
+        ])
+        if not files:
+            pytest.skip("Nessun file .npz in data/preprocessed/val")
+        return files
+
+    @pytest.fixture(scope="class")
+    def medical_terms(self):
+        """Carica i termini medici."""
+        from scripts.metrics import load_medical_terms
+        path = "data/medical_terms.txt"
+        if not os.path.exists(path):
+            return set()
+        return load_medical_terms(path)
+
+    def test_mel_format_is_native(self, val_files):
+        """Le mel features devono essere in formato (n_frames, n_mels) = (3000, 80)."""
+        data = np.load(val_files[0])
+        mel = data["log_mel"]
+        assert mel.shape == (3000, 80), (
+            f"Mel shape {mel.shape} non è nel formato nativo mlx-whisper (3000, 80). "
+            f"Riesegui 06_preprocess_mlx.py."
+        )
+
+    def test_mel_scale_is_native(self, val_files):
+        """Le mel features devono essere nella scala nativa mlx-whisper (range ~[-1, 2])."""
+        data = np.load(val_files[0])
+        mel = data["log_mel"]
+        # La scala nativa è circa [-1, 2], non [-80, 0] (librosa) né [0, 1] (normalizzato)
+        assert mel.min() > -5.0, f"Mel min={mel.min():.2f} — sembra scala librosa, non nativa"
+        assert mel.max() < 5.0, f"Mel max={mel.max():.2f} — fuori dal range atteso"
+
+    def test_reference_decode_produces_text(self, val_files, tokenizer):
+        """I token di riferimento devono decodificare in testo non vuoto."""
+        data = np.load(val_files[0])
+        labels = data["labels"]
+        ref_tokens = [int(t) for t in labels if t != -100 and t < 50257]
+        reference = tokenizer.decode(ref_tokens, skip_special_tokens=True).strip()
+        assert len(reference) > 0, "Reference decodificata vuota — problema nei labels preprocessati"
+        assert len(reference.split()) >= 3, f"Reference troppo corta: '{reference}'"
+
+    def test_whisper_decode_fp16_false(self, whisper_model, val_files):
+        """Il decode con fp16=False deve funzionare con modello float32."""
+        from mlx_whisper.decoding import DecodingOptions, decode as whisper_decode
+
+        data = np.load(val_files[0])
+        mel = mx.array(data["log_mel"])
+
+        options = DecodingOptions(
+            language="it", task="transcribe",
+            without_timestamps=True, fp16=False,
+        )
+        # Non deve lanciare eccezioni
+        result = whisper_decode(whisper_model, mel, options)
+        hyp = result[0].text if isinstance(result, list) else result.text
+        assert len(hyp.strip()) > 0, "Decode ha prodotto testo vuoto"
+
+    def test_whisper_decode_fp16_true_raises(self, whisper_model, val_files):
+        """Il decode con fp16=True deve fallire con modello float32 (encoder produce f32)."""
+        from mlx_whisper.decoding import DecodingOptions, decode as whisper_decode
+
+        data = np.load(val_files[0])
+        mel = mx.array(data["log_mel"])
+
+        options = DecodingOptions(
+            language="it", task="transcribe",
+            without_timestamps=True, fp16=True,
+        )
+        with pytest.raises(TypeError, match="incorrect dtype"):
+            whisper_decode(whisper_model, mel, options)
+
+    def test_single_sample_wer_below_one(self, whisper_model, val_files, tokenizer):
+        """La WER su un singolo campione deve essere < 1.0 (il modello capisce il testo)."""
+        from mlx_whisper.decoding import DecodingOptions, decode as whisper_decode
+        from scripts.metrics import compute_wer
+
+        data = np.load(val_files[0])
+        mel = mx.array(data["log_mel"])
+        labels = data["labels"]
+
+        ref_tokens = [int(t) for t in labels if t != -100 and t < 50257]
+        reference = tokenizer.decode(ref_tokens, skip_special_tokens=True).strip()
+
+        options = DecodingOptions(
+            language="it", task="transcribe",
+            without_timestamps=True, fp16=False,
+        )
+        result = whisper_decode(whisper_model, mel, options)
+        hyp = result[0].text if isinstance(result, list) else result.text
+
+        wer = compute_wer(reference, hyp.strip())
+        assert wer < 1.0, (
+            f"WER={wer:.4f} — il modello non sta trascrivendo.\n"
+            f"  Reference:  '{reference[:100]}'\n"
+            f"  Hypothesis: '{hyp[:100]}'"
+        )
+
+    def test_compute_epoch_wer_returns_metrics(
+        self, whisper_model, val_files, tokenizer, medical_terms
+    ):
+        """compute_epoch_wer deve restituire eval/wer e eval/medical_wer < 1.0."""
+        # Testa su un sottoinsieme per velocità
+        subset = val_files[:3]
+        results = compute_epoch_wer(
+            whisper_model, subset, tokenizer,
+            medical_terms, medical_weight=3.0,
+        )
+
+        assert "eval/wer" in results, "compute_epoch_wer non ha restituito eval/wer"
+        assert "eval/medical_wer" in results, "compute_epoch_wer non ha restituito eval/medical_wer"
+        assert results["eval/wer"] < 1.0, f"WER media={results['eval/wer']:.4f} — ancora 1.0!"
+        assert results["eval/medical_wer"] < 1.0, (
+            f"Medical WER={results['eval/medical_wer']:.4f} — ancora 1.0!"
+        )
+

@@ -10,6 +10,22 @@ def _patched_load(*args, **kwargs):
     return _original_load(*args, **kwargs)
 torch.load = _patched_load
 
+# Fix per torchaudio 2.5+: bypassa torchcodec (rimosso dalle dipendenze) usando soundfile
+import torchaudio
+import soundfile as sf
+
+_original_torchaudio_load = torchaudio.load
+def _patched_torchaudio_load(filepath, *args, **kwargs):
+    """Carica audio con soundfile invece di torchcodec."""
+    data, sample_rate = sf.read(filepath, dtype="float32")
+    tensor = torch.tensor(data)
+    if tensor.ndim == 1:
+        tensor = tensor.unsqueeze(0)  # (1, samples) — mono
+    else:
+        tensor = tensor.T  # (channels, samples)
+    return tensor, sample_rate
+torchaudio.load = _patched_torchaudio_load
+
 from TTS.api import TTS
 
 TEXT_MANIFEST = "data/synthetic_chunks/manifest_text.json"
@@ -26,13 +42,20 @@ def main():
         
     with open(TEXT_MANIFEST, 'r', encoding='utf-8') as f:
         text_chunks = json.load(f)
-        
-    print("Inizializzazione del modello XTTS_v2 in corso...")
-    # XTTS_v2 supporta solo CUDA e CPU (MPS non è supportato dalla libreria Coqui TTS)
+
+    # Seleziona il modello TTS in base alla disponibilità del file di riferimento vocale
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to(device)
-    print(f"Modello XTTS_v2 caricato su device: {device}")
-    
+    use_cloning = os.path.exists(SPEAKER_WAV)
+
+    if use_cloning:
+        print(f"Inizializzazione XTTS_v2 (voice cloning da {SPEAKER_WAV})...")
+        tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to(device)
+        print(f"Modello XTTS_v2 caricato su device: {device}")
+    else:
+        print("⚠️  reference_voice.wav non trovato — uso voce italiana predefinita (VITS).")
+        tts = TTS("tts_models/it/mai_female/vits").to(device)
+        print(f"Modello VITS italiano caricato su device: {device}")
+
     synthetic_manifest = []
     
     total = len(text_chunks)
@@ -53,12 +76,18 @@ def main():
         print(f"\n[{idx}/{total}] [{chunk_id}] Testo: {text[:80]}...")
         t0 = time.time()
         
-        tts.tts_to_file(
-            text=text, 
-            speaker_wav=SPEAKER_WAV, 
-            language="it", 
-            file_path=out_filepath
-        )
+        if use_cloning:
+            tts.tts_to_file(
+                text=text, 
+                speaker_wav=SPEAKER_WAV, 
+                language="it", 
+                file_path=out_filepath
+            )
+        else:
+            tts.tts_to_file(
+                text=text,
+                file_path=out_filepath
+            )
         
         duration = time.time() - t0
         print(f"Fatto in {duration:.2f} secondi.")

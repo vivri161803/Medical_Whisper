@@ -2,73 +2,55 @@
 
 La roadmap è organizzata in fasi di lavoro logiche e sequenziali, rispecchiando l'attuale struttura della pipeline del progetto. Essendo un Proof of Concept, il focus primario è sulla stabilità della preparazione del dato e sulla riproducibilità del training.
 
-## Fase 1: Segmentazione e Allineamento (Completato)
-- [x] Sviluppo dello script `01_chunk_and_align.py`.
-- [x] Trascrizione iniziale degli audio lunghi e forced alignment tramite WhisperX.
-- [x] Implementazione dell'algoritmo di fuzzy matching (RapidFuzz) per sostituire i testi allineati automaticamente con il ground truth della trascrizione manuale verificata.
-- [x] Taglio e generazione di segmenti audio brevi (1-30 secondi) salvati in `data/chunks/` con il rispettivo file `manifest.json`.
+## Fase 1: Preparazione Testo (Completato)
+- [x] Sviluppo dello script `01_prepare_text.py`.
+- [x] Pulizia testuale dei file `.txt` estratti da PDF: rimozione sillabazioni a capo, spazi multipli, artefatti di formattazione.
+- [x] Sentence tokenization con NLTK (lingua italiana).
+- [x] Implementazione dell'algoritmo di Hybrid Chunking con vincoli: `min_words=15`, `max_words=35`, `max_chars=200` (limite XTTS_v2). Split delle frasi lunghe su virgole e punti e virgola.
+- [x] Generazione di `data/synthetic_chunks/manifest_text.json` con i chunk testuali.
 
-## Fase 2: Filtro Qualità (Completato)
-- [x] Sviluppo dello script `02_filter_quality.py`.
-- [x] Rilevamento della percentuale di parlato per segmento tramite Silero VAD (es. >30% di parlato).
-- [x] Stima euristica del Signal-to-Noise Ratio (SNR) per scartare segmenti eccessivamente rumorosi (<10 dB).
-- [x] Filtraggio secondario basato su anomalie di durata e score di similarity insufficiente con il ground truth.
-- [x] Salvataggio del dataset audio purificato in `data/filtered/` con relativo `manifest_filtered.json`.
+## Fase 2: Generazione Audio Sintetico (Completato)
+- [x] Sviluppo dello script `02_generate_audio.py`.
+- [x] Configurazione del modello Coqui XTTS_v2 locale con voice cloning da file di riferimento (`data/raw/reference_voice.wav`).
+- [x] Generazione dei file `.wav` per ogni chunk testuale con meccanismo resume-safe.
+- [x] Salvataggio del dataset audio sintetico in `data/synthetic_audio/` con relativo `manifest_synthetic.json`.
+- [x] Validazione manuale a campione della pronuncia e della qualità audio.
 
-## Fase 3 (Pivot): Generazione Dataset Audio Sintetico
-- [x] Sviluppo di uno script per la pulizia (text preparation) dei testi raw estratti da PDF.
-- [x] Implementazione di un sistema di "hybrid chunking" per dividere il testo ripulito in spezzoni ideali (1-30 secondi).
-- [x] Configurazione del modello Text-to-Speech locale `Coqui XTTS_v2`.
-- [x] Sviluppo di uno script per generare i file `.wav` e il file `manifest_synthetic.json`.
-- [x] Validazione manuale a campione della pronuncia e della qualità del dataset generato.
-
-## Fase 3.5: Data Augmentation
+## Fase 3 (Pivot): Data Augmentation (Completato)
 - [x] Definizione dei modelli dati (Pydantic) per la validazione di manifest in ingresso e in uscita.
 - [x] Implementazione della pipeline `ClassroomAugmenter` usando `audiomentations` (Reverb, Background Noise, BandPass, Volume Fluctuation).
 - [x] Scrittura dei test (pytest) per verificare i requisiti spettrali, dinamici e i vincoli rigidi sulla durata dell'audio (<= 30s).
 - [x] Integrazione dello script CLI tramite `Typer` per l'orchestrazione del processing batch.
 
-## Fase 4: Fine-Tuning e Valutazione 
-Ecco la roadmap rivista, epurata dalle dipendenze di PyTorch (come `Seq2SeqTrainer` o `torch.utils.data`) e riprogettata nativamente attorno all'ecosistema **Apple MLX**, integrando il rigore dello Spec-Driven Development (SDD) e la fase cruciale di benchmarking.
+## Fase 4: Fine-Tuning e Valutazione (Completato)
 
-### A: Spec-Driven Contracts & Baseline (Il punto zero)
+Pipeline MLX-native per il fine-tuning LoRA del modello `whisper-small` su Apple Silicon, con evaluation Medical WER e tracking W&B.
 
-Nella cartella scripts:
-* [ ] **Sviluppo dello script `03_data_contracts.py`:** Implementazione dei modelli Pydantic per validare la struttura del dataset in ingresso (garantire sample rate a 16kHz, canali mono, durata $\le 30$ secondi e testo ripulito da tag).
-* [ ] **Sviluppo dello script `04_metrics.py` (Medical WER):** Creazione di una funzione di valutazione custom che penalizzi maggiormente gli errori sui termini di chirurgia maxillo-facciale rispetto alle congiunzioni o agli articoli, ma anche impostare una loss wer generica come metrica aggiuntiva per supervisionare la fase di training.
-* [ ] **Implementazione dello script `05_baseline_benchmark.py`:** Utilizzo di `mlx-whisper` (inferenza pura) per trascrivere un subset di validazione dei tuoi audio aumentati in modalità *zero-shot* (senza addestramento). Registrazione del Medical WER di partenza e WER normale. Questo numero è il benchmark da abbattere.
+### A: Contratti Dati & Metriche (Completato)
+- [x] **`03_data_contracts.py`:** Validazione Pydantic del dataset (16kHz, mono, ≤30s, testo pulito). AliasChoices per compatibilità manifest sintetico/augmented.
+- [x] **`04_metrics.py` (Medical WER):** WER standard via `jiwer` + WER pesato con penalità 3x su glossario medico esterno.
+- [x] **Test:** `test_data_contracts.py`, `test_metrics.py` — tutti passati.
 
-### B: Data Ingestion Apple-Native
+### B: Baseline Benchmark (Completato)
+- [x] **`05_baseline_benchmark.py`:** Inferenza zero-shot con `mlx_whisper.transcribe()`, calcolo WER/Medical WER, report JSON + logging W&B.
+- [x] **Risultato baseline:** WER = 0.2279, Medical WER = 0.2301 (benchmark da abbattere).
+- [x] **Test:** `test_baseline_benchmark.py` — passato.
 
-* [ ] **Sviluppo dello script `06_preprocess_mlx.py`:** Estrazione delle feature log-Mel spettrogramma e tokenizzazione del testo. A differenza di PyTorch, calcoleremo queste feature *una tantum* salvandole in array compressi `.npz` (o caricandole via `mlx.data` stream), per eliminare l'overhead della CPU durante il training e scaricare tutto il lavoro sulla GPU dell'M1 Pro.
-* [ ] **Gestione dinamica di Padding e Masking (MLX core):** Implementazione di funzioni in `mlx.core` per allineare i tensori audio a lunghezze fisse (es. 3000 frame per Whisper) e mascherare i token di padding nella loss, ignorando i token `-100`.
+### C: Preprocessing Apple-Native (Completato)
+- [x] **`06_preprocess_mlx.py`:** Estrazione mel con `mlx_whisper.audio.log_mel_spectrogram()` (pipeline nativa, non librosa). Formato `(n_frames, n_mels)` = `(3000, 80)`. Tokenizzazione con `transformers.WhisperTokenizer`. Split 80/10/10 deterministico.
+- [x] **Test:** `test_preprocess_mlx.py` — passato.
 
-### C: Configurazione e Training MLX (LoRA)
+### D: Training LoRA (Completato)
+- [x] **`training_config.yaml`:** Configurazione centralizzata degli iperparametri. `entity: null` per auto-detection W&B.
+- [x] **`07_finetune_mlx.py`:** LoRA su layer `query`/`value` (72 layer, 3.5M params trainabili su 244M totali). Training loop con `nn.value_and_grad()`, cross-entropy con masking, gradient clipping, checkpointing `.safetensors`.
+- [x] **Evaluation intra-training:** val_loss ogni 50 step, WER/Medical WER a fine epoca via trascrizione autoregressiva (`mlx_whisper.decoding.decode(fp16=False)`).
+- [x] **W&B logging:** `train/loss`, `train/avg_loss`, `train/grad_norm`, `eval/loss`, `eval/wer`, `eval/medical_wer`, `best_medical_wer`.
+- [x] **Test:** `test_finetune_mlx.py` — 17 test (10 strutturali + 7 WER evaluation) — tutti passati.
 
-Sostituiamo il monolitico `Seq2SeqTrainer` con un training loop nativo, leggero e cucito su misura per i chip Apple Silicon tramite il repository `mlx-examples`.
-
-* [ ] **Integrazione del file `training_config.yaml`:** Mappatura centralizzata degli iperparametri essenziali. Configurazione specifica per M1 Pro: `batch_size` ridotto (es. 4 o 8 per non saturare i 16GB), precisione `fp16` (obbligatoria per la velocità), rank LoRA (`r=32`, `alpha=64`), e parametri dell'ottimizzatore (es. AdamW).
-* [ ] **Sviluppo dello script `07_finetune_mlx.py` (Il Core):**
-* Caricamento dinamico dei pesi originali di `whisper-small` convertiti in formato MLX.
-* Iniezione dei moduli LoRA (Low-Rank Adaptation) nei layer di Attention (es. `q_proj`, `v_proj`).
-* Congelamento (freezing) del modello base: solo i pesi LoRA avranno `requires_grad = True`.
-* [ ] **Sviluppo del MLX Training Loop:** Costruzione del ciclo di addestramento sfruttando `mlx.nn.value_and_grad` per il calcolo della loss e l'aggiornamento dei gradienti tramite `mlx.optimizers`. Gestione esplicita di `mx.eval()` per forzare la valutazione del grafo computazionale in Metal.
-
-### D: Validazione Continua e Checkpointing
-
-* [ ] **Integrazione di W&B (Weights & Biases) o MLX Logging:** Sostituzione di TensorBoard (troppo legato all'ecosistema PyTorch) con un logging leggero su riga di comando o via wandb per tracciare la Loss di training e validation in tempo reale.
-* [ ] **Evaluation Loop intra-training:** Configurazione dello script affinché, ogni $N$ step, i pesi LoRA correnti vengano fusi temporaneamente con il modello base per eseguire una trascrizione sul validation set. Calcolo immediato del Medical WER per confermare che l'adattamento al gergo medico stia funzionando.
-* [ ] **Salvataggio incrementale degli Adapter (`adapters.npz`):** Checkpointing sicuro che salva *esclusivamente* i pochi megabyte dei pesi LoRA, preservando spazio sul disco del MacBook.
-
-### E: Validazione del codice
-
-Implementare tramite Pytest dei test nella cartella `./tests` per verificare gli script implementati: 
-
-* [ ] Implementare un test per lo script 03 che verifichi che, qualora venga dato un file audio - ad esempio rumore bianco - con le caratteristiche adeguate, questo venga fatto passare dal test
-* [ ] Per lo scipt 04 implementare un test che verifichi che le loss possano essere calcolate a partire da dei risultati fasulli, per vedere soltanto se il codice gira. 
-* [ ] Per lo script 05 verificare che la parte di inferenza e benchmarking iniziale funzioni
-* [ ] Per lo script 06 testare che tutti funzioni a partire da file audio fasulli, per vedere se il codice gira
-* [ ] Per lo script 07 testare che le prime iterazioni funzionino e che tuttto parta senza problemi
+### E: Pulizia e Documentazione (Completato)
+- [x] Aggiornamento `pyproject.toml`: rimosse dipendenze legacy (`accelerate`, `tensorboard`, `torchvision`, `torchcodec`).
+- [x] Aggiornamento `README.md`: istruzioni W&B, comandi Step 1–7, parametri.
+- [x] Aggiornamento spec: allineamento `plan.md`, `requirements.md`, `validation.md` all'implementazione reale.
 
 ## Fase 5: Sperimentazione e Deploy (In Pianificazione)
 - [ ] Valutazione formale del modello su un test set "hold-out" (lezioni universitarie inedite).
