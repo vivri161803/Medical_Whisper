@@ -353,12 +353,13 @@ def compute_epoch_wer(
 # Training Loop
 # ---------------------------------------------------------------------------
 
-def train(config: dict):
+def train(config: dict, es_overrides: dict | None = None):
     """
     Loop di training principale con calcolo reale di loss e gradienti.
 
     Args:
         config: Dizionario di configurazione dal file YAML.
+        es_overrides: Override CLI per i parametri di early stopping.
     """
     # Parametri dalla config
     model_name = config["model"]["name"]
@@ -377,6 +378,15 @@ def train(config: dict):
     medical_weight = config["evaluation"]["medical_weight"]
     preprocessed_dir = config["data"]["preprocessed_dir"]
     output_dir = config["data"]["output_dir"]
+
+    # Early stopping config (YAML defaults + CLI override)
+    es_config = config.get("early_stopping", {})
+    if es_overrides:
+        es_config.update({k: v for k, v in es_overrides.items() if v is not None})
+    es_enabled = es_config.get("enabled", True)
+    es_patience = es_config.get("patience", 3)
+    es_metric = es_config.get("metric", "val_loss")
+    es_min_delta = es_config.get("min_delta", 0.001)
 
     # W&B config
     wandb_config = config.get("wandb", {})
@@ -479,9 +489,15 @@ def train(config: dict):
     global_step = 0
     best_val_loss = float("inf")
     best_medical_wer = float("inf")
+    epochs_without_improvement = 0
+    stopped_early = False
 
     print(f"\n{'='*60}")
     print(f"🎯 Inizio training: {num_epochs} epoche")
+    if es_enabled:
+        print(f"🛑 Early stopping: patience={es_patience}, metric={es_metric}, min_delta={es_min_delta}")
+    else:
+        print(f"🛑 Early stopping: disabilitato")
     print(f"{'='*60}\n")
 
     model.train()
@@ -618,6 +634,40 @@ def train(config: dict):
                     "eval/epoch": epoch + 1,
                 })
 
+        # --- Early Stopping Check ---
+        if es_enabled and val_files:
+            if es_metric == "medical_wer" and "eval/medical_wer" in wer_results:
+                current_value = wer_results["eval/medical_wer"]
+                best_value = best_medical_wer
+            else:
+                # Calcola val_loss di fine epoca come metrica di default
+                end_epoch_val_loss = evaluate_model(model, val_files, batch_size)
+                current_value = end_epoch_val_loss
+                best_value = best_val_loss
+
+            # Verifica miglioramento
+            improvement = best_value - current_value
+            if improvement > es_min_delta:
+                epochs_without_improvement = 0
+                print(f"  📈 Early stopping: metrica migliorata di {improvement:.4f} (contatore resettato).")
+            else:
+                epochs_without_improvement += 1
+                print(
+                    f"  📉 Early stopping: nessun miglioramento significativo "
+                    f"({epochs_without_improvement}/{es_patience})."
+                )
+
+            if use_wandb:
+                wandb.log({"early_stopping/epochs_without_improvement": epochs_without_improvement})
+
+            if epochs_without_improvement >= es_patience:
+                print(
+                    f"\n  🛑 Early stopping attivato! Nessun miglioramento per "
+                    f"{es_patience} epoche consecutive."
+                )
+                stopped_early = True
+                break
+
     # Salvataggio finale
     final_path = os.path.join(output_dir, "adapters_final.safetensors")
     trainable_flat = dict(tree_flatten(model.trainable_parameters()))
@@ -639,10 +689,14 @@ def train(config: dict):
         wandb.summary["lora_layers"] = num_lora
         wandb.summary["trainable_params"] = trainable_params
         wandb.summary["trainable_pct"] = pct
+        wandb.summary["stopped_early"] = stopped_early
+        wandb.summary["epochs_completed"] = epoch + 1
         wandb.finish()
 
+    stop_reason = "early stopping" if stopped_early else "completamento epoche"
     print(f"\n{'='*60}")
-    print(f"🎉 Training completato!")
+    print(f"🎉 Training terminato ({stop_reason})!")
+    print(f"   Epoche completate: {epoch + 1}/{num_epochs}")
     print(f"   Loss finale: {avg_epoch_loss:.4f}")
     print(f"   Miglior val_loss: {best_val_loss:.4f}")
     if best_medical_wer < float("inf"):
@@ -670,6 +724,36 @@ def main():
         default=None,
         help="Path opzionale a un checkpoint precedente (adapters.safetensors).",
     )
+
+    # --- Early stopping CLI overrides ---
+    es_group = parser.add_argument_group(
+        "Early Stopping",
+        "Override dei parametri di early stopping definiti nel YAML."
+    )
+    es_group.add_argument(
+        "--es-patience",
+        type=int,
+        default=None,
+        help="Epoche senza miglioramento prima dello stop (override YAML).",
+    )
+    es_group.add_argument(
+        "--es-metric",
+        type=str,
+        default=None,
+        choices=["val_loss", "medical_wer"],
+        help="Metrica da monitorare: 'val_loss' o 'medical_wer' (override YAML).",
+    )
+    es_group.add_argument(
+        "--es-min-delta",
+        type=float,
+        default=None,
+        help="Miglioramento minimo per considerare progresso (override YAML).",
+    )
+    es_group.add_argument(
+        "--no-early-stopping",
+        action="store_true",
+        help="Disabilita l'early stopping (ignora config YAML).",
+    )
     args = parser.parse_args()
 
     config = load_config(args.config)
@@ -677,7 +761,18 @@ def main():
     if args.resume:
         print(f"📂 Ripresa dal checkpoint: {args.resume}")
 
-    train(config)
+    # Costruisci override dict per early stopping
+    es_overrides = {}
+    if args.no_early_stopping:
+        es_overrides["enabled"] = False
+    if args.es_patience is not None:
+        es_overrides["patience"] = args.es_patience
+    if args.es_metric is not None:
+        es_overrides["metric"] = args.es_metric
+    if args.es_min_delta is not None:
+        es_overrides["min_delta"] = args.es_min_delta
+
+    train(config, es_overrides=es_overrides or None)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,27 @@
+# =============================================================================
+# requirements.txt — PyTorch Cloud Fine-Tuning (RunPod L4 24GB)
+# =============================================================================
+# Install: pip install -r requirements.txt
+# Tested on: Python 3.11, CUDA 12.1, RunPod L4
+
+# --- Core ML ---
+torch==2.4.0
+torchaudio==2.4.0
+transformers>=4.44.0,<5.0.0
+peft>=0.12.0,<1.0.0
+safetensors>=0.4.0
+
+# --- Data & Metrics ---
+numpy>=1.24.0,<2.0.0
+jiwer>=3.0.0
+datasets>=2.19.0
+
+# --- Logging & Tracking ---
+wandb>=0.17.0
+
+# --- Config & CLI ---
+pyyaml>=6.0
+tqdm>=4.66.0
+
+# --- Utilities ---
+accelerate>=0.33.0

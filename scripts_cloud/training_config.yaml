@@ -1,0 +1,50 @@
+# ===========================================================================
+# training_config.yaml — Configurazione per fine-tuning PyTorch su GPU Cloud
+# ===========================================================================
+# Ottimizzato per RunPod L4 (24GB VRAM).
+
+model:
+  name: "openai/whisper-medium"  # openai/whisper-small | medium | large-v3
+  language: "it"
+
+lora:
+  rank: 32
+  alpha: 64
+  dropout: 0.05
+  target_modules: ["q_proj", "v_proj"]
+
+training:
+  batch_size: 4
+  gradient_accumulation_steps: 2      # Effective batch = 4 × 2 = 8
+  learning_rate: 1.0e-5
+  num_epochs: 30
+  warmup_steps: 100
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  fp16: true
+  gradient_checkpointing: true        # Riduce VRAM ~40%
+  logging_steps: 10
+  eval_steps: 50
+  save_steps: 100
+  save_total_limit: 3                 # Max checkpoint salvati
+
+evaluation:
+  medical_terms_path: "data/medical_terms.txt"
+  medical_weight: 3.0
+
+data:
+  preprocessed_dir: "data/preprocessed"
+  output_dir: "outputs_cloud"
+  seed: 42
+
+early_stopping:
+  enabled: true
+  patience: 3
+  metric: "eval_loss"    # "eval_loss" | "eval_medical_wer"
+  min_delta: 0.001
+
+wandb:
+  project: "whisper-medical-finetuning"
+  entity: null
+  run_name: null          # auto-generato se null
+  tags: ["pytorch", "lora", "cloud", "runpod"]

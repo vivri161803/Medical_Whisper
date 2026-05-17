@@ -52,8 +52,25 @@ Pipeline MLX-native per il fine-tuning LoRA del modello `whisper-small` su Apple
 - [x] Aggiornamento `README.md`: istruzioni W&B, comandi Step 1–7, parametri.
 - [x] Aggiornamento spec: allineamento `plan.md`, `requirements.md`, `validation.md` all'implementazione reale.
 
+### F: fine-tuning massivo
+- [x] Implementare early stopping nel training dello script [text](../scripts/07_finetune_mlx.py)
+- [x] Svuotare [text](../data/synthetic_audio) e fare ripartire lo script 02 per la sintesi vocale
+- [x] Procedere con la pipeline descritta nel @README.md fino al fine-tuning del modello
+
+### G: PyTorch Cloud Pipeline (Completato)
+- [x] Porting del training loop da MLX a PyTorch + HuggingFace Seq2SeqTrainer + PEFT LoRA
+- [x] Custom Dataset per caricamento file `.npz` preprocessati
+- [x] Metriche standalone (WER + Medical WER) compatibili con Trainer
+- [x] Config YAML dedicata per GPU cloud (fp16, gradient checkpointing, gradient accumulation)
+- [x] `requirements.txt` con PyTorch 2.4.0 + CUDA
+- [x] Script di deploy `deploy_runpod.sh` per RunPod L4
+- [x] Supporto multi-modello: whisper-small / medium / large-v3
+- [x] Early stopping + CLI overrides
+- [x] Spec: `specs/2026-05-17-pytorch-cloud-finetuning/`
+ 
 ## Fase 5: Sperimentazione e Deploy (In Pianificazione)
+- [ ] Fine-tuning di `whisper-medium` su GPU cloud RunPod L4 tramite `scripts_cloud/`.
 - [ ] Valutazione formale del modello su un test set "hold-out" (lezioni universitarie inedite).
 - [ ] Redazione di un report conclusivo del PoC, misurando quantitativamente il delta di accuratezza tra il modello Whisper zero-shot e il modello fine-tunato.
-- [ ] (Opzionale) Sperimentazione con architetture di dimensioni superiori (es. `whisper-medium` o `whisper-large-v3-turbo`) se le risorse hardware lo consentono.
+- [ ] (Opzionale) Sperimentazione con `whisper-large-v3` se le risorse lo consentono.
 - [ ] (Opzionale) Implementazione di uno script CLI dedicato all'inferenza o di una UI semplificata (Gradio/Streamlit) per consentire agli studenti di medicina di trascrivere agilmente le proprie registrazioni.

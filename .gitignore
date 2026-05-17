@@ -12,9 +12,10 @@ wheels/
 
 # Dati audio e segmenti
 data/raw/
-data/chunks/
 data/filtered/
-data/
+data/augmented_audio/
+data/synthetic_chunks/
+data/synthetic_audio/
 
 # Output modelli
 outputs/

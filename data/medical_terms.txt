@@ -1,0 +1,137 @@
+# Glossario Termini Medici — Chirurgia Maxillo-Facciale
+# Un termine per riga. I commenti (#) e le righe vuote vengono ignorati.
+# I termini sono case-insensitive.
+
+# Ossa e strutture anatomiche
+mandibola
+mascellare
+processo coronoideo
+condilo mandibolare
+ramo mandibolare
+corpo mandibolare
+sinfisi mentoniera
+forame mentoniero
+forame mandibolare
+angolo mandibolare
+tuberosità mascellare
+palato duro
+palato molle
+osso zigomatico
+osso ioide
+articolazione temporomandibolare
+basicranio
+clivus
+cavità glenoidea
+spina nasale anteriore
+
+# Patologie
+osteonecrosi
+osteomielite
+osteoradionecrosi
+ameloblastoma
+cheratocisti
+cisti radicolare
+cisti follicolare
+displasia fibrosa
+fibroma ossificante
+granuloma gigantocellulare
+mucocele
+ranula
+carcinoma squamocellulare
+leucoplachia
+eritroplachia
+lichen planus orale
+ascesso
+flemmone
+osteite
+rabdomiosarcoma
+sarcoma
+
+# Farmaci e trattamenti
+bifosfonati
+denosumab
+zoledronato
+alendronato
+radioterapia
+chemioterapia
+immunoterapia
+ossigenoterapia iperbarica
+
+# Procedure chirurgiche
+osteotomia
+ostectomia
+resezione segmentale
+ricostruzione mandibolare
+lembo libero
+lembo microvascolare
+innesto osseo
+distrazione osteogenetica
+artrocentesi
+artroscopia
+discectomia
+eminectomia
+coronoidectomia
+condilectomia
+mandibulectomia
+tracheostomia
+svuotamento linfonodale
+
+# Terminologia clinica
+trisma
+anchilosi
+malocclusione
+prognatismo
+retrognatia
+laterodeviazione
+asimmetria facciale
+parestesia
+ipoestesia
+disestesia
+disfagia
+odinofagia
+diplopia
+enoftalmo
+esoftalmo
+
+# Anatomia specifica
+nervo alveolare inferiore
+nervo linguale
+nervo facciale
+nervo trigemino
+nervo infraorbitario
+ghiandola parotide
+ghiandola sottomandibolare
+ghiandola sottolinguale
+
+# Tessuti e strutture
+periostio
+endostio
+corticale ossea
+midollare ossea
+cartilagine condilare
+disco articolare
+capsula articolare
+legamento sfenomandibolare
+legamento stilomandibolare
+muscolo massetere
+muscolo temporale
+muscolo pterigoideo
+
+# Imaging e diagnostica
+ortopantomografia
+teleradiografia
+cone beam
+tomografia computerizzata
+risonanza magnetica
+scintigrafia ossea
+dentalscan
+
+# Materiali e dispositivi
+placca di osteosintesi
+vite bicorticale
+miniplacca
+mesh in titanio
+innesto autologo
+innesto omologo
+innesto eterologo
+membrana riassorbibile

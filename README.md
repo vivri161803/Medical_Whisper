@@ -183,10 +183,10 @@ PYTHONPATH=. uv run python scripts/03_data_contracts.py data/augmented_audio/dat
 
 ### Step 4 — Baseline Benchmark (Zero-Shot)
 ```bash
-PYTHONPATH=. uv run python scripts/05_baseline_benchmark.py \
-    --manifest data/augmented_audio/dataset_augmented.jsonl \
-    --medical-terms data/medical_terms.txt \
-    --output-dir outputs
+PYTHONPATH=. uv run python -m scripts.05_baseline_benchmark \
+  --manifest data/augmented_audio/dataset_augmented.jsonl \
+  --medical-terms data/medical_terms.txt \
+  -n 200 --seed 123
 ```
 
 ### Step 5 — Preprocessing

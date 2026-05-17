@@ -16,7 +16,7 @@ lora:
 training:
   batch_size: 4
   learning_rate: 1.0e-5
-  num_epochs: 3
+  num_epochs: 30
   optimizer: "adamw"
   weight_decay: 0.01
   max_grad_norm: 1.0
@@ -34,7 +34,13 @@ data:
   seed: 42
   split_ratios: [0.8, 0.1, 0.1]
 
+early_stopping:
+  enabled: true
+  patience: 3          # Epoche senza miglioramento prima dello stop
+  metric: "medical_wer"   # "val_loss" | "medical_wer"
+  min_delta: 0.001     # Miglioramento minimo per considerare progresso
+
 wandb:
   project: "whisper-medical-finetuning"
   entity: null  # auto-detect (models-university-of-florence)
-  run_name: null  # auto-generato se null
+  run_name: fine_tune_complete  # auto-generato se null

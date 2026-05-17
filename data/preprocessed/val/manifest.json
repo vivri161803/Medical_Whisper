@@ -1,0 +1,3590 @@
+[
+  {
+    "id": "maxillo04_chunk_0725",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0725.wav",
+    "transcript": "oggi si preferiscono alla contenzione rigida perché si dà alla mandibola la possibilità di una piccola movimentazione ma nello stesso tempo si impedisce una scomposizione ulteriore.",
+    "duration_sec": 12.5766875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0725_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1548",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1548.wav",
+    "transcript": "- Profondità di inclusione e grado di mesializzazione: più il dente è storto, più il dente è storto e profondo e più è difficile l'estrazione.",
+    "duration_sec": 10.2086875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1548_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2104",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2104.wav",
+    "transcript": "di estensione: quindi tumore a localizzazione profonda quindi nemmeno quale sia avanzate T2 T3 T4, se c'è un'invasione midollare mandibolare",
+    "duration_sec": 9.8886875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2104_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1989",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1989.wav",
+    "transcript": "Quasi sempre sono associate a lesioni cutanee o altre lesioni mucose (genitali).",
+    "duration_sec": 6.219375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1989_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1902",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1902.wav",
+    "transcript": "Una chiusura del palato duro e di una mucosa palatina spessa/cheratinizzata può creare delle cicatrici che ho ostacolano/inibiscono per certi versi l'espansione/la crescita naturale del palato.",
+    "duration_sec": 14.155375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1902_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0645",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0645.wav",
+    "transcript": "Ogni emimandibola è costituita da: 36 CLASSIFICAZIONE A seconda dei meccanismi lesivi, le fratture possono essere: 1.",
+    "duration_sec": 9.7926875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0645_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1841",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1841.wav",
+    "transcript": "EMBRIOLOGIA È importante sapere che dal punto di vista embriologico il cavo orale e il viso si sviluppa a seguito della maturazione dei tre archi branchiali",
+    "duration_sec": 9.419375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1841_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2207",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2207.wav",
+    "transcript": ", e quindi le era stato detto che era un tumore benigno con crescita lenta esofitica, dopodiché si è cancerizzato",
+    "duration_sec": 7.883375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2207_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo02_chunk_0008",
+    "audio_path": "data/synthetic_audio/maxillo02_chunk_0008.wav",
+    "transcript": "mentre l’assunzione per via orale nelle donne in menopausa determina un rischio molto più basso.",
+    "duration_sec": 7.19,
+    "augmented_audio_path": "data/augmented_audio/maxillo02_chunk_0008_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1249",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1249.wav",
+    "transcript": "• OVERJET e OVERBITE • AFFOLLAMENTI O DIASTEMI, sono molto importanti perché ci dicono se abbiamo un eccesso di spazio o un difetto di spazio nelle arcate.",
+    "duration_sec": 11.883375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1249_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0496",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0496.wav",
+    "transcript": "e un altro elemento dentario (settimo dente) che rimane semincluso.",
+    "duration_sec": 5.5686875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0496_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo01_chunk_0059",
+    "audio_path": "data/synthetic_audio/maxillo01_chunk_0059.wav",
+    "transcript": "Essendo un tumore così aggressivo si deve andare a 2 cm di margine, aggiungendo eventualmente una radioterapia adiuvante e lo svuotamento del collo.",
+    "duration_sec": 10.582,
+    "augmented_audio_path": "data/augmented_audio/maxillo01_chunk_0059_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1347",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1347.wav",
+    "transcript": "Quando abbiamo trovato la posizione nuova andiamo a bloccarlo con dei mezzi di sintesi in titanio.",
+    "duration_sec": 6.4966875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1347_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0386",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0386.wav",
+    "transcript": "Le cause scatenanti possono essere: estrazioni dentarie, terapia canalare (cioè le devitalizzazione), fatture maxillo-mandibolari, ma soprattutto le infezioni acute dei mascellari",
+    "duration_sec": 13.835375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0386_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0870",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0870.wav",
+    "transcript": "FRATTURA TRASVERSALE DI LE FORT III È ancora più alta e viene definita anche distacco cranio-facciale.",
+    "duration_sec": 8.214,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0870_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0114",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0114.wav",
+    "transcript": "AUSCULTAZIONE Si esegue soprattutto a livello dell'articolazione temporo-mandibolare per verificare eventuali incoordinazioni, quindi un problema del disco fibrocartilagineo.",
+    "duration_sec": 11.51,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0114_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo03_chunk_0023",
+    "audio_path": "data/synthetic_audio/maxillo03_chunk_0023.wav",
+    "transcript": "Inoltre, va fatto l’esame cefalometrico, che misura i rapporti fra denti, ossa e tessuti molli.",
+    "duration_sec": 7.4246875,
+    "augmented_audio_path": "data/augmented_audio/maxillo03_chunk_0023_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0526",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0526.wav",
+    "transcript": "Si sviluppa nel mascellare anteriore nella regione del forame naso incisivo.",
+    "duration_sec": 5.515375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0526_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1997",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1997.wav",
+    "transcript": "Dal punto di vista macroscopico a volte può far paura perché possono essere anche lesioni importanti che considereremo in altro modo fino a quando poi non facciamo l'esame istologico.",
+    "duration_sec": 12.811375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1997_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0188",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0188.wav",
+    "transcript": "4) LINGUA Anche a livello della lingua si possono manifestare delle problematiche; dobbiamo valutare: - Aspetto: in condizioni normali la lingua si presenta rosea",
+    "duration_sec": 12.534,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0188_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0824",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0824.wav",
+    "transcript": "o Archi di resistenza trasversali: a. Baluardo superiore o glabello-sopraccigliare b. Baluardo intermedio o zigomatico-infraorbitario c.",
+    "duration_sec": 15.437375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0824_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1228",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1228.wav",
+    "transcript": "che non mette d'accordo i chirurghi maxillo-facciali (perché sono delle situazioni che a me non piacciono e poi si pagano quando il ragazzo diventa adulto) è il CAMOUFLAGE ORTODONTICO.",
+    "duration_sec": 11.3286875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1228_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1753",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1753.wav",
+    "transcript": "101 Anche in questo caso si possono mettere le ferule o si possono mettere o le viti transradicolari per eseguire poi il blocco rigido o elastico.",
+    "duration_sec": 11.2326875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1753_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1584",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1584.wav",
+    "transcript": "È posizionato esattamente sotto il seno mascellare, quindi dobbiamo stare attenti a non spingerlo all’interno.",
+    "duration_sec": 8.534,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1584_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0358",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0358.wav",
+    "transcript": "a una FASCITE NECROTIZZANTE: condizione abbastanza rara ma molto pericolosa dovuta di solito ad anerobi, soprattutto lo Pseudomonas Aeruginosa.",
+    "duration_sec": 9.8886875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0358_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1878",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1878.wav",
+    "transcript": "poi in base a quanto è completa o incompleta la labioschisi interesserà diversi tipi di subunità della regione naso labiale.",
+    "duration_sec": 7.798,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1878_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1200",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1200.wav",
+    "transcript": "In questo caso il profilo viene definito a mezzaluna, perchè abbiamo una mandibola che è parecchio avanti.",
+    "duration_sec": 6.5926875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1200_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1709",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1709.wav",
+    "transcript": "Si dovrebbe utilizzare in tutti i casi di OSAS lieve o media, eviterei il MAD nei pazienti gravi; anche i pazienti edentuli portatori di protesi mobili totali possono portare il MAD.",
+    "duration_sec": 12.203375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1709_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1379",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1379.wav",
+    "transcript": "80 MALOCCLUSIONI E TERAPIA Riprendiamo la terapia in base al tipo di malocclusione. PROGENISMO Il progenismo è la deformità dento-facciale più frequentemente trattata per via chirurgica.",
+    "duration_sec": 13.7826875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1379_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0085",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0085.wav",
+    "transcript": "Oppure banalmente ci possono essere delle situazioni da correggere per motivi estetici, come le orecchie a sventola.",
+    "duration_sec": 7.883375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0085_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1299",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1299.wav",
+    "transcript": "angolo che si apre presuppone una mandibola molto grande e lunga). Valori inferiori corrispondono ad un modello brachifacciale (faccia corta), con eventuale morso profondo (seconda classe).",
+    "duration_sec": 15.2226875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1299_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1940",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1940.wav",
+    "transcript": "I tassi di incidenza sono più elevati nelle regioni settentrionali rispetto a quelle centro-meridionale ed insulari, circa 3 volte maggiori",
+    "duration_sec": 9.003375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1940_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0159",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0159.wav",
+    "transcript": "che possono essere accompagnate da tumori odontogeni o da cisti. Nei bimbi mancano i premolari e chiaramente i denti del giudizio.",
+    "duration_sec": 10.156,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0159_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0888",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0888.wav",
+    "transcript": "o Oculari dinamici: diplopia, deficit dei mobilità. o Neurologici: lesioni del nervo facciale e del nervo infraorbitario che fa parte della seconda branca trigeminale.",
+    "duration_sec": 14.4226875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0888_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2043",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2043.wav",
+    "transcript": "palato molle) - Grado di differenziazione istologica→ varietà infiltrante e ulcerata rispetto all’espansiva - Caratteristiche di progressione locale a fronte dell'invasione - Spessore superiore a 5/6 mm (è un valore importante) - Dimensione elevata - Invasione perineurale che è caratteristica di alcuni tipi di tumore o vascolare - Neoangiogenesi.",
+    "duration_sec": 23.4886875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2043_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0989",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0989.wav",
+    "transcript": "I muscoli estrinseci dell'orbita sono: retto superiore, retto interiore, retto mediale, retto laterale→ questi danno i movimenti di verticalità e lateralità.",
+    "duration_sec": 13.227375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0989_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1032",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1032.wav",
+    "transcript": "Fistola carotido-cavernosa per l'interessa mento del canale carotideo. Sindrome dell'apice orbitario con neuropatia ottica: frammento di osso che interessa l’apice orbitario.",
+    "duration_sec": 13.0786875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1032_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo01_chunk_0067",
+    "audio_path": "data/synthetic_audio/maxillo01_chunk_0067.wav",
+    "transcript": "Sono benigni l’80% dei tumori della parotide, il 50% della sottomandibolare e il 20% della sottolinguale.",
+    "duration_sec": 8.6726875,
+    "augmented_audio_path": "data/augmented_audio/maxillo01_chunk_0067_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1008",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1008.wav",
+    "transcript": "Si ottengono così due diagrammi a seconda che fissi un occhio e l'altro che indicano l'entità della deviazione primaria e secondaria nelle varie posizioni di sguardo.",
+    "duration_sec": 12.4806875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1008_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1434",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1434.wav",
+    "transcript": "Le caratteristiche cliniche sono: • Seconda classe scheletrica • Overjet aumentato • Deep bite anteriore • Deficit del mento e del labbro inferiore • Altezza facciale ridotta • Labbro inferiore arricciato ed everso quando l'altezza facciale è corta.",
+    "duration_sec": 20.566,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1434_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1322",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1322.wav",
+    "transcript": "andiamo a modificare anche un pochettino l'estetica. CHIRURGIA DEL MASCELLARE L'osteotomia più importante, che quella che seguiamo nel 99% dei casi",
+    "duration_sec": 10.1026875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1322_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1734",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1734.wav",
+    "transcript": "Anni fa utilizzavamo l'AVANZAMENTO DEL GENIOGLOSSO: prevede l'avanzamento del muscolo genioglosso attraverso la traslazione in avanti del mento",
+    "duration_sec": 9.142,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1734_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1596",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1596.wav",
+    "transcript": "I denti vengono scappucciati, si fa il solito lembo palatino, vengono posizionate due bracket con due fili di metallo e attraverso degli elastici vengono guidati in arcata.",
+    "duration_sec": 12.299375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1596_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1897",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1897.wav",
+    "transcript": "Questo serve a ristabilire un cercine muscolare e quindi ad armonizzare il volto, si può associare anche la correzione della punta nasale",
+    "duration_sec": 9.099375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1897_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0801",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0801.wav",
+    "transcript": "Incisione, si eleva un lembo tipo ritidectomia, approfondimento per via transparotidea fino a reperire la frattura, riduzione della stessa e posizionamento di mezzi di sintesi.",
+    "duration_sec": 12.342,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0801_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0620",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0620.wav",
+    "transcript": "Possono essere: o Chiuse: con assenza di lacerazione dei tessuti molli o Aperte: quando c’è esposizione del focolaio di frattura verso l'esterno.",
+    "duration_sec": 12.5766875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0620_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0901",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0901.wav",
+    "transcript": "causando una neuropatia ottica post-traumatica: in questo caso è molto probabile la perdita del visus, se non si agisce in tempi brevi nell'arco di un'ora, perde l'occhio di sicuro",
+    "duration_sec": 12.395375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0901_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2288",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2288.wav",
+    "transcript": "noi ci soffermeremo sui primi due: • SOTTOMANDIBOLARE: rimozione enblock del contenuto della loggia sopradigastrica, comprendendo l'exeresi della ghiandola sottomandibolare",
+    "duration_sec": 10.998,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2288_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo02_chunk_0005",
+    "audio_path": "data/synthetic_audio/maxillo02_chunk_0005.wav",
+    "transcript": "mentre nei pazienti con metastasi ossei la cessazione di questo trattamento è molto difficoltosa, dato che determinano numerosi benefici in tali pazienti, quali riduzione delle fratture ossee",
+    "duration_sec": 12.342,
+    "augmented_audio_path": "data/augmented_audio/maxillo02_chunk_0005_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1877",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1877.wav",
+    "transcript": "• BILATERALE INCOMPLETA e COMPLETA: il labbro superiore è praticamente diviso in tre parti",
+    "duration_sec": 7.243375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1877_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2137",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2137.wav",
+    "transcript": "perché quando il tumore infiltra l'osso dobbiamo essere sicuri di riuscire a ottenere in tutti i modi la radicalità del trattamento",
+    "duration_sec": 8.171375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2137_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0794",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0794.wav",
+    "transcript": "Si fa quando c’è: • Dislocazione del condilo • Scomposizione mediale del frammento fratturato > di 30° • Scomposizione laterale del condilo con accorciamento del ramo mandibolare • Incongruenza occlusale post-traumatica non correggibile con terapia funzionale • Edentulia totale con perdita della dimensione verticale e/o impossibilità alla terapia funzionale (non correggibile ad esempio col posizionamento di due protesi che mantengono l’altezza e la dimensione verticale).",
+    "duration_sec": 27.4886875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0794_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo01_chunk_0091",
+    "audio_path": "data/synthetic_audio/maxillo01_chunk_0091.wav",
+    "transcript": "Sono tutti lembi che rimangono “attaccati”, mentre i lembi che si “staccano” sono i lembi liberi, che vanno rivascolarizzati (attaccandoli ai vasi del collo).",
+    "duration_sec": 12.0646875,
+    "augmented_audio_path": "data/augmented_audio/maxillo01_chunk_0091_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo03_chunk_0012",
+    "audio_path": "data/synthetic_audio/maxillo03_chunk_0012.wav",
+    "transcript": "Chirurgia del mascellare Il trattamento delle deformità dentofacciali può basarsi su modificazione della crescita (ortopedia dentofacciale)",
+    "duration_sec": 10.2086875,
+    "augmented_audio_path": "data/augmented_audio/maxillo03_chunk_0012_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0605",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0605.wav",
+    "transcript": "Intervento: approccio doppio: approccio coronale (attraverso il cuoio capelluto fino ad esporre la fossa infratemporale) e approccio intraorale.",
+    "duration_sec": 9.323375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0605_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2381",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2381.wav",
+    "transcript": "questo era un lembo robusto facilmente scolpibile che si utilizzava per la ricostruzione del cavo orale, quindi tessuti molli.",
+    "duration_sec": 8.491375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2381_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2000",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2000.wav",
+    "transcript": "quindi bisogna prendere dei pezzi abbastanza grossi e a carattere espansivo della infiltrazione profonda→ biopsie molto grandi.",
+    "duration_sec": 8.6726875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2000_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1556",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1556.wav",
+    "transcript": "questo dipende da due fattori: 1) il primo fattore è la difficoltà di estrazione dei denti, sono i denti sono brutti conviene estrarli in anestesia generale facendo dormire il paziente.",
+    "duration_sec": 13.462,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1556_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0155",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0155.wav",
+    "transcript": "o Classe I: -2mm ± 3mm o Classe II: +1mm o Classe III: inferiore a -5mm ➢ OVERBITE INCISIVO: distanza verticale tra i bordi incisali inferiori e superiori che si misura perpendicolarmente al piano occlusale.",
+    "duration_sec": 19.7766875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0155_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0990",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0990.wav",
+    "transcript": "Poi abbiamo l’obliquo superiore e l'obliquo inferiore che danno movimenti di rotazione. Sono responsabili della rotazione del bulbo oculare in tutte le direzioni spaziali.",
+    "duration_sec": 11.916,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0990_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0271",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0271.wav",
+    "transcript": "può alla lunga provocare comunque un'infezione.",
+    "duration_sec": 3.755375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0271_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo03_chunk_0044",
+    "audio_path": "data/synthetic_audio/maxillo03_chunk_0044.wav",
+    "transcript": "Le ossa sono state osservate da tutte le proiezioni: laterale, frontale e dal basso. La tecnica chirurgica maggiormente utilizzata sul mascellare superiore è l’osteotomia secondo Le Fort I.",
+    "duration_sec": 14.4226875,
+    "augmented_audio_path": "data/augmented_audio/maxillo03_chunk_0044_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo03_chunk_0016",
+    "audio_path": "data/synthetic_audio/maxillo03_chunk_0016.wav",
+    "transcript": "si crea un miglioramento estetico e si corregge la funzione dell’articolazione temporo-mandibolare (in realtà su quest’ultimo punto ci sono numerosi dubbi).",
+    "duration_sec": 10.539375,
+    "augmented_audio_path": "data/augmented_audio/maxillo03_chunk_0016_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0183",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0183.wav",
+    "transcript": "Esempio: il morbo di Crohn a volte può avere la prima manifestazione all'interno del cavo orale, da una banale afta a delle lesioni granulomatose inspiegabili",
+    "duration_sec": 11.2326875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0183_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0478",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0478.wav",
+    "transcript": "INQUADRAMENTO CLINICO Sono di solito asintomatiche: può esserci un riscontro occasionale per un'infezione o per una deformità dei mascellari→ i pazienti si rendono conto di un qualcosa che cresce all'interno dei mascellari che deforma loro il viso o il mascellare stesso.",
+    "duration_sec": 16.15,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0478_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1448",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1448.wav",
+    "transcript": "quindi una condizione importante è la frattura di condilo.",
+    "duration_sec": 5.014,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1448_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0714",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0714.wav",
+    "transcript": "RX cranio laterale: frattura al termine del trattamento, placche di osteosintesi in titanio con dei fili di metallo che si utilizzano per bloccare la frattura.",
+    "duration_sec": 11.2326875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0714_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0577",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0577.wav",
+    "transcript": "Si è sviluppato un pre planning mandibolare per modellare prima la placca: con stampanti 3D si riesce a simulare in maniera virtuale l'intervento",
+    "duration_sec": 10.07,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0577_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2412",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2412.wav",
+    "transcript": "Innesti più conosciuti: • Innesto secondo Ottier-Thiersch • Innesto secondo Blair-Brown, un pochettino più spesso.",
+    "duration_sec": 9.974,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2412_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0124",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0124.wav",
+    "transcript": "1) APERTURA DELLA BOCCA Verifichiamo innanzitutto l'apertura della bocca; esistono pazienti che possono avere un TRISMA: anomala contrattura che non permette l'apertura della bocca",
+    "duration_sec": 14.155375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0124_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0059",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0059.wav",
+    "transcript": "riusciamo a evidenziare anche delle problematiche importanti anche in fase di acuzie: • TUMEFAZIONI: possono essere catalogate come un rigonfiamento anormale di una o più parti del corpo.",
+    "duration_sec": 14.5286875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0059_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0375",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0375.wav",
+    "transcript": "che può provocare una compromissione encefalica importante (dovuta sempre dal tipico ascesso nella regione del canino superiore con inversione dello shunt venoso a livello della vena angolare del naso).",
+    "duration_sec": 11.8406875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0375_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2102",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2102.wav",
+    "transcript": "molto utile per discriminare l'invasione corticale ossea rispetto alla TC tradizionale. Poi, la panoramica ci dà un'idea di quello che è il quadro di insieme dei mascellari.",
+    "duration_sec": 11.404,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2102_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1578",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1578.wav",
+    "transcript": "- Ingrossate, definite globose o a cipolla, più sono spesse e più è difficile estrarre i denti, ci vuole un bel po' di esperienza.",
+    "duration_sec": 9.7926875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1578_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2046",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2046.wav",
+    "transcript": "danno metastasi per via ematica dopo il salto dei linfonodi (potrebbe esserci poi a distanza di tempo una certa percentuale di metastasi a distanza, quindi fegato, polmone, encefalo).",
+    "duration_sec": 12.1606875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2046_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0482",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0482.wav",
+    "transcript": "infatti se c'è un'alterazione sensoriale ci troviamo di fronte a delle lesioni aggressive, che possono essere potenzialmente maligne.",
+    "duration_sec": 9.462,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0482_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0708",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0708.wav",
+    "transcript": "Serve una TC in proiezione assiale e in proiezione coronale. Utile anche la ricostruzione tridimensionale.",
+    "duration_sec": 8.3,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0708_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1233",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1233.wav",
+    "transcript": "Se il bambino non può essere intercettato in fase di crescita quindi attorno ai 6 o 7 anni, si consiglia di farli crescere così come stanno crescendo, in maniera malocclusa.",
+    "duration_sec": 10.678,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1233_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0576",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0576.wav",
+    "transcript": "con un buon risultato estetico e funzionale Esame istologico: cellule a palizzata tipiche dell’ameloblastoma. Neoformazione all’emimandibola di sinistra.",
+    "duration_sec": 11.5426875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0576_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo03_chunk_0011",
+    "audio_path": "data/synthetic_audio/maxillo03_chunk_0011.wav",
+    "transcript": "ortodonzia terapeutica ed ortodonzia pre-chirurgica vanno in direzione opposta e ricorrere alla chirurgia in seguito ad un'ortodonzia terapeutica di cui non si è soddisfatti può portare gravi danni alla stabilità dentale.",
+    "duration_sec": 15.4566875,
+    "augmented_audio_path": "data/augmented_audio/maxillo03_chunk_0011_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo03_chunk_0026",
+    "audio_path": "data/synthetic_audio/maxillo03_chunk_0026.wav",
+    "transcript": "Invece, il Porion è il punto più alto dell’orifizio del condotto uditivo esterno. Questi parametri, insieme ad altri, ci permettono di valutare le proporzioni dei pazienti.",
+    "duration_sec": 11.457375,
+    "augmented_audio_path": "data/augmented_audio/maxillo03_chunk_0026_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0903",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0903.wav",
+    "transcript": "Trattamento in elezione: bisogna adnare ad esporre i focolai di frattura, cioè andiamo a incidere in modo da verificare le fratture, a ridurle e a posizionare i mezzi di sintesi.",
+    "duration_sec": 12.4806875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0903_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0597",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0597.wav",
+    "transcript": "OPT: grossa neoformazione all'angolo mandibolare di sinistra, che ha spinto verso il basso il settimo elemento dentario.",
+    "duration_sec": 9.046,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0597_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1576",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1576.wav",
+    "transcript": "Dei denti con radici ricurve molte volte richiedono anche oltre alle odontotomia, al taglio della corona, richiedono anche la rizotomia",
+    "duration_sec": 9.7926875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1576_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo01_chunk_0080",
+    "audio_path": "data/synthetic_audio/maxillo01_chunk_0080.wav",
+    "transcript": "i deficit cartilaginei o ossei con tessuti cartilaginei o ossei.",
+    "duration_sec": 5.846,
+    "augmented_audio_path": "data/augmented_audio/maxillo01_chunk_0080_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0832",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0832.wav",
+    "transcript": "Molte di queste fratture possono essere associata magari possiamo avere una Le Fort 1 a destra, poi diventa Le Fort 2 a sinistra",
+    "duration_sec": 8.63,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0832_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1549",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1549.wav",
+    "transcript": "Molto utile molto importante per pianificare l’estrazione perché più è profondo e inclinato e più il dente non potrà essere estratto in un unico frammento, quindi va sezionato.",
+    "duration_sec": 13.5046875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1549_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2470",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2470.wav",
+    "transcript": "ed è diventato poi un lembo composito.",
+    "duration_sec": 3.6166875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2470_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0644",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0644.wav",
+    "transcript": "ANATOMIA DELLA MANDIBOLA È costituita da due segmenti ossei simmetrici e fusi sulla linea mediana a livello della sinfisi mandibolare.",
+    "duration_sec": 11.606,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0644_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0584",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0584.wav",
+    "transcript": "Aspetto istologico: è un epitelio ameloblastico con delle atipie citologiche, mitosi atipiche e aree di necrosi.",
+    "duration_sec": 8.6726875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0584_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0650",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0650.wav",
+    "transcript": "oblique (2), longitudinali (3).",
+    "duration_sec": 6.027375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0650_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2094",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2094.wav",
+    "transcript": "nel nostro caso quando parliamo di carcinomi del cavo orale potrebbe essere utile quando si presenta alla nostra osservazione con un'unica manifestazione clinica che è la linfoadenopatia→ se non è possibile evidenziare il tumore primitivo",
+    "duration_sec": 15.691375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2094_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1082",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1082.wav",
+    "transcript": "Anche perché i canti sono posizionati attraverso dei tendini su delle docce ossee che se si spaccano viene persa la posizione sia della palpebra superiore che di quella inferiore e quindi l’occhio si distacca dall'altro.",
+    "duration_sec": 13.27,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1082_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1720",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1720.wav",
+    "transcript": "modifica la posizione del corpo linguale che da orizzontale diventa verticale; è un paziente che mantiene quella posizione perché ha delle protesi dentali",
+    "duration_sec": 9.654,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1720_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0565",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0565.wav",
+    "transcript": "La sede più frequente è l'angolo mandibolare: non si è capito il perché, però molte neoformazioni si sviluppano a livello dell'angolo mandibolare (come anche la cheratocisti).",
+    "duration_sec": 13.6006875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0565_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1717",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1717.wav",
+    "transcript": "Nel trattamento chirurgico esistono anche delle condizioni predisponenti all'insorgenza dell’OSAS tra cui: ➢ Condizioni di dismorfismo",
+    "duration_sec": 10.251375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1717_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1569",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1569.wav",
+    "transcript": "quindi la curva di apprendimento deve essere importante prima di improvvisarsi chirurghi orali. 90 TAC assiale e panoramica: dente completamente coricato.",
+    "duration_sec": 13.1746875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1569_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1050",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1050.wav",
+    "transcript": "Caratteristiche. - Anatomia complessa - Fratture comminute instabili",
+    "duration_sec": 7.137375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1050_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2209",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2209.wav",
+    "transcript": "per la confluenza di numerose strutture anatomiche non è sempre possibile stabilire il punto di origine della neoplasia.",
+    "duration_sec": 7.19,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2209_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo01_chunk_0015",
+    "audio_path": "data/synthetic_audio/maxillo01_chunk_0015.wav",
+    "transcript": "Può essere fatto con una trasposizione di tessuti, con dei lembi liberi, con dei lembi regionali, con dei lembi locali, con l’espansione di tessuto (che poi può essere usato per ricostruire)",
+    "duration_sec": 12.95,
+    "augmented_audio_path": "data/augmented_audio/maxillo01_chunk_0015_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0399",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0399.wav",
+    "transcript": "- Subacuta: da 4 a 12 settimane.",
+    "duration_sec": 3.147375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0399_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2439",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2439.wav",
+    "transcript": "Le pinze emostatiche mantengono azzerato il flusso sanguigno quando si fanno le operazioni di sutura perché non possiamo chiaramente suturare su una carotide se non viene fermato il flusso sanguigno",
+    "duration_sec": 12.1606875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2439_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0887",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0887.wav",
+    "transcript": "✓ SINTOMI ACCESSORI: o Oculari statici: macroorbita traumatica (contenitore dell'occhio si spacca e diventa più grande), enoftalmo, distopie verticali.",
+    "duration_sec": 13.0886875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0887_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0037",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0037.wav",
+    "transcript": "ma che sono delle deformità che in qualche modo devono essere corrette. 2) Biotipo facciale.",
+    "duration_sec": 9.921375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0037_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1827",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1827.wav",
+    "transcript": "Indicazioni all’utilizzo di distrattori: - Difetti di cresta alveolare circoscritti della mandibola e del mascellare superiore - Atrofia assoluta della cresta alveolare mandibolare - Atrofia assoluta della cresta alveolare del mascellare superiore distretto anteriore - Deficit di cresta alveolare da esiti di resezione tumorale Protocollo: - Chirurgia - Si aspetta 7 giorni - Dopodiché si inizia ad attivare: due giri per 0.5 mm al giorno→ significa un millimetro al giorno di distrazione",
+    "duration_sec": 27.4886875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1827_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1756",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1756.wav",
+    "transcript": "Vedete come si modifica il PAS con un avanzamento bimascellare: a destra il canale nero (albero respiratorio) è stretto",
+    "duration_sec": 8.7686875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1756_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2236",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2236.wav",
+    "transcript": "Quelle che si eseguono di solito sono: - Via transmandibolare osteotomica: si interrompe la mandibola e poi si ricostruisce come se fosse una frattura mettendo delle placche e si fa l’osteosintesi successiva",
+    "duration_sec": 14.571375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2236_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0137",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0137.wav",
+    "transcript": "Il ponfo è sostanzialmente cutaneo. Lesioni secondarie. • EROSIONE: è una perdita di sostanza intraepiteliale.",
+    "duration_sec": 11.3086875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0137_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0616",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0616.wav",
+    "transcript": "• Osso con architettura spugnosa (o spongiosa): rappresentata nelle porzioni midollari.",
+    "duration_sec": 7.0086875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0616_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1745",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1745.wav",
+    "transcript": "si porta tutto in avanti→ sopra osteotomia mascellare secondo le Fort 1 e sotto osteotomia mandibolare secondo Obwegeser–Dal Pont.",
+    "duration_sec": 10.678,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1745_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1015",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1015.wav",
+    "transcript": "Se il bulbo non ruota c'è ancora incarceramento, se il bulbo muove passivamente vuol dire che è una lesione nervosa.",
+    "duration_sec": 8.214,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1015_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2274",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2274.wav",
+    "transcript": "Qual è la differenza sostanziale? Svuotamento radicale del collo (RND).",
+    "duration_sec": 6.913375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2274_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2313",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2313.wav",
+    "transcript": "perché non è possibile stringere il campo soltanto alle strutture che comprendevano il tumore e da questo ne derivano quelli che sono gli effetti collaterali.",
+    "duration_sec": 10.443375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2313_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1736",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1736.wav",
+    "transcript": "in questo modo portiamo in avanti anche la lingua. Tra le varie tecniche avevamo ideato l'OSTEOTOMIA RETTANGOLARE ANTERIORE",
+    "duration_sec": 8.673375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1736_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2347",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2347.wav",
+    "transcript": "CHIRURGIA RICOSTRUTTIVA Trattandosi di tumori del distretto facciale, la chirurgia è abbastanza demolitiva, quindi possiamo avere due problematiche importanti: una problematica estetica",
+    "duration_sec": 12.811375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2347_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0527",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0527.wav",
+    "transcript": "Clinicamente si manifesta come una tumefazione del palato, dietro la papilla incisiva, di consistenza duro elastica o fluttuante.",
+    "duration_sec": 9.323375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0527_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0351",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0351.wav",
+    "transcript": "• RISERVE SISTEMICHE: è la risposta che l'ospite dà alle gravi infezione; può causare un notevole carico fisiologico dell'organismo: da febbre, leucocitosi",
+    "duration_sec": 13.974,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0351_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1198",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1198.wav",
+    "transcript": "70 Nella terza classe c'è una protrusione mandibolare e una retrusione del mascellare superiore→ ha un momento importante, volitivo",
+    "duration_sec": 9.2806875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1198_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1515",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1515.wav",
+    "transcript": "se noi perdiamo i denti inevitabilmente col tempo anche il tessuto osseo andrà incontro a un atrofia",
+    "duration_sec": 6.219375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1515_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0205",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0205.wav",
+    "transcript": "È possibile attraverso l’OPT valutare tantissime situazioni: - Valutazione dello stato del cavo orale: posizione dei denti del giudizio, le malformazioni dentarie.",
+    "duration_sec": 12.118,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0205_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1179",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1179.wav",
+    "transcript": "quindi una mandibola più corta→ presuppone una seconda classe scheletrica • Eccessivo sviluppo del mascellare superiore→ presuppone un openbite, cioè un morso aperto • Asimmetrie facciali",
+    "duration_sec": 13.131375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1179_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1594",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1594.wav",
+    "transcript": "possono dare dei problemi di riassorbimento a livello radicolare sui denti vicino e altri problemi.",
+    "duration_sec": 6.027375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1594_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0559",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0559.wav",
+    "transcript": "- Carcinoma ameloblastico - Tumore odontogeno squamoso - Tumore odontogeno epiteliale calcificante (o tumore di Pindborg) - Tumore odontogeno a cellule chiare.",
+    "duration_sec": 14.4326875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0559_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1531",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1531.wav",
+    "transcript": "perché rischiamo poi di avere degli osteiti, quindi delle infezioni croniche che non guariscono più.",
+    "duration_sec": 7.5206875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1531_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0570",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0570.wav",
+    "transcript": "Può provocare mobilità degli elementi dentari adiacenti: distruggendo l’osso distrugge anche il processo alveolare che dà sostegno ai denti.",
+    "duration_sec": 11.8406875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0570_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0211",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0211.wav",
+    "transcript": "11 Dente con all'interno una colorazione bianca→ significa che è stato devitalizzato: avevano un'infezione o una carie che andava nella zona della camera pulpare",
+    "duration_sec": 12.4806875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0211_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1952",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1952.wav",
+    "transcript": "pitture, acidi→ lavoratori a contatto con reagenti oncogenici e non hanno le protezioni giuste.",
+    "duration_sec": 9.046,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1952_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo03_chunk_0070",
+    "audio_path": "data/synthetic_audio/maxillo03_chunk_0070.wav",
+    "transcript": "Per ridurre la problematica, si fa una sospensione del muscolo digastrico anteriore alla placca anteriore.",
+    "duration_sec": 6.9126875,
+    "augmented_audio_path": "data/augmented_audio/maxillo03_chunk_0070_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2051",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2051.wav",
+    "transcript": "Il tasso di sopravvivenza ha una media del 50%: - T1 e T2 è superiore al 70% quindi un buon tasso di sopravvivenza - T3 e T4 inferiore al 30%, I pazienti muoiono per il mancato controllo dei linfonodi",
+    "duration_sec": 16.15,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2051_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2394",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2394.wav",
+    "transcript": ", invece a livello pettorale è difficile non trovare un'arteria e una vena lunga che possa essere traslata fino in alto.",
+    "duration_sec": 7.147375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2394_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo02_chunk_0009",
+    "audio_path": "data/synthetic_audio/maxillo02_chunk_0009.wav",
+    "transcript": "Quindi, il rischio dipende dalla somministrazione per via endovenosa e dalla dose cumulativa di questi farmaci.",
+    "duration_sec": 8.075375,
+    "augmented_audio_path": "data/augmented_audio/maxillo02_chunk_0009_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1728",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1728.wav",
+    "transcript": "ma in più viene anche irrobustito quindi vibra molto di meno rispetto alle condizioni predisponenti l'OSAS.",
+    "duration_sec": 8.491375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1728_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1942",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1942.wav",
+    "transcript": "Tutte le sedie possono essere colpite, quelle che più facilmente possono andare incontro ad insorgenza del tumore del cavo orale sono: - Lingua - Orofaringe, intendo il palato molle",
+    "duration_sec": 11.926,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1942_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1616",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1616.wav",
+    "transcript": "quindi non è necessario una volta che viene scollato il lembo, non è necessario usare gli strumenti rotanti, ma è un osso che si sgretola semplicemente con degli strumenti manuali.",
+    "duration_sec": 13.046,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1616_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1119",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1119.wav",
+    "transcript": ", quindi facciamo soltanto il follow-up del paziente.",
+    "duration_sec": 4.2246875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1119_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1381",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1381.wav",
+    "transcript": "→ Da qui partono le aspettative del paziente e le aspettative del chirurgo. Eziologia.",
+    "duration_sec": 9.089375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1381_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0345",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0345.wav",
+    "transcript": "Fortunatamente sono rare; a volte ci troviamo di fronte a un'emergenza importante, quindi il trattamento da fare in prima battuta è la tracheostomia per salvare il paziente.",
+    "duration_sec": 11.467375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0345_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1950",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1950.wav",
+    "transcript": "se il sistema immunitario funziona bene non ci sono grossi problemi).",
+    "duration_sec": 4.2246875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1950_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0787",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0787.wav",
+    "transcript": "ISPEZIONE EXTRAORALE Asimmetrie facciali, Morso aperto, Edemi, Ferite cutanee, Otorragia, Ecchimosi, Scialorrea ISPEZIONE ENDORALE Deviazione linea mediana",
+    "duration_sec": 15.318,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0787_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0145",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0145.wav",
+    "transcript": "➢ Malocclusione di III classe: il contrario",
+    "duration_sec": 4.075375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0145_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo02_chunk_0067",
+    "audio_path": "data/synthetic_audio/maxillo02_chunk_0067.wav",
+    "transcript": "Le vie di accesso possono essere intraorali oppure extraorali.",
+    "duration_sec": 8.822,
+    "augmented_audio_path": "data/augmented_audio/maxillo02_chunk_0067_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0488",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0488.wav",
+    "transcript": "• Cisti ossee solitarie • Cisti aneurismatica • Cisti o lacuna di Stafne. Cisti dentigera o follicolare.",
+    "duration_sec": 12.5666875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0488_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0562",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0562.wav",
+    "transcript": "AMELOBLASTOMA Il tumore più frequente è l’ameloblastoma, compone l’11% dei tumori odontogeni e lo 0,14% di tutti i tumori.",
+    "duration_sec": 11.5526875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0562_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1114",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1114.wav",
+    "transcript": "non c'è l'indicazione al trattamento a meno che non ci siano delle complicanze intracraniche.",
+    "duration_sec": 4.9606875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1114_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2411",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2411.wav",
+    "transcript": "L'innesto cutaneo per essere: • A spessore parziale split-thickness • Innesti cutanei a spessore totale full-thickness, dipende da quanto ci serve come spessore l'innesto libero.",
+    "duration_sec": 13.878,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2411_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1465",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1465.wav",
+    "transcript": "parleremo di tutti quei denti inclusi che devono essere estratti perché sono sintomatici oppure perché strategicamente vanno estratti per altri motivi.",
+    "duration_sec": 11.051375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1465_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1793",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1793.wav",
+    "transcript": "I pazienti con un’atrofia estrema non riescono nemmeno a supportare una dentiera: anche la dentiera è difficile da portare soprattutto all'arcata inferiore",
+    "duration_sec": 8.726,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1793_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2156",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2156.wav",
+    "transcript": "Si fa l'asportazione del tumore restando sempre oltre 1,5 cm, si asporta un innesto epidermicodermoepidermico, tipo Wolfe, prelevato dal gluteo, dalla coscia, dalla regione sovrapubica",
+    "duration_sec": 13.419375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2156_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1970",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1970.wav",
+    "transcript": "perché altrimenti perdiamo i reperi anatomici importanti e rischiamo di insemenzare il paziente e poi di avere delle problematiche nella prognosi a lungo termine.",
+    "duration_sec": 9.7926875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1970_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1362",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1362.wav",
+    "transcript": "però anche in questo caso ci sono delle varianti: ➢ Osteotomia verticale del ramo 79 ➢ Osteotomia del corpo ➢ Osteotomia subapicale anteriore ➢ Quella che si usa per il 99% è l’osteotomia sagittale del ramo.",
+    "duration_sec": 27.531375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1362_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1092",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1092.wav",
+    "transcript": ", l’alternativa è la tracheostomia→ si parte sempre dia punti di riferimento fissi",
+    "duration_sec": 5.515375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1092_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0251",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0251.wav",
+    "transcript": "Gli ultimi apparecchi di risonanza magnetica acquisiscono bene anche l'osso, mentre fino a qualche anno fa l’acquisizione ottimale per la risonanza magnetica era fondamentalmente per i tessuti molli.",
+    "duration_sec": 14.251375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0251_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0984",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0984.wav",
+    "transcript": "DIPLOPIA: visione doppia, è un sintomo soggettivo presente quando si guarda con ambedue gli occhi ed è dovuta la mancata fusione delle immagini fornite dalle due retine.",
+    "duration_sec": 10.8166875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0984_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0966",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0966.wav",
+    "transcript": "L’approccio al bordo orbitario inferire può essere: o Per via subciliare: microincisione nella regione palpebrale inferiore, in corrispondenza di una ruga già esistente.",
+    "duration_sec": 12.534,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0966_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2106",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2106.wav",
+    "transcript": "Sia la TC che la risonanza magnetica del collo sono molto utili come discriminante di linfoadenopatie nella regione soprattutto sottomandibolare, sottodigastrica",
+    "duration_sec": 9.3766875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2106_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2384",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2384.wav",
+    "transcript": "perché viene staccato dal pettorale e a tunnel viene traslato verso l'alto a ricostruire quello che ci serve.",
+    "duration_sec": 7.606,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2384_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0690",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0690.wav",
+    "transcript": "e posizionando una placchetta e riducendole rischiamo di peggiorare la situazione in fase di crescita.",
+    "duration_sec": 6.4006875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0690_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1733",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1733.wav",
+    "transcript": "100 Per quello che riguarda invece la chirurgia maxillo-facciale, noi possiamo agire soprattutto andando a tendere delle strutture molli, utilizzando le strutture scheletriche.",
+    "duration_sec": 10.763375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1733_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0667",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0667.wav",
+    "transcript": "il m. miloioideo e il m. genioioideo e questo sistema di fionda che serve a tenere in equilibrio anche la lingua.",
+    "duration_sec": 11.906,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0667_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0287",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0287.wav",
+    "transcript": "Dobbiamo seguire degli step: 1. Determinare la severità dell'infezioni 2.",
+    "duration_sec": 8.1186875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0287_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo03_chunk_0049",
+    "audio_path": "data/synthetic_audio/maxillo03_chunk_0049.wav",
+    "transcript": "In pratica, il mascellare viene fatto avanzare indietro nelle anomalie del massiccio facciale di terza classe con rotazione antioraria.",
+    "duration_sec": 8.822,
+    "augmented_audio_path": "data/augmented_audio/maxillo03_chunk_0049_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0545",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0545.wav",
+    "transcript": "- REAZIONE A CELLULE GIGANTI maligne tipo gli osteosarcomi → diciamo che le lesioni a cellule giganti centrali sono la parte benigna dei sarcomi.",
+    "duration_sec": 9.75,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0545_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2215",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2215.wav",
+    "transcript": "LABBRO Qui abbiamo una problematica estetica importante: - Se sono piccoli T1-T2, si fa la resezione cuneiforme oppure la brachiterapia e si chiude di prima intenzione.",
+    "duration_sec": 13.27,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2215_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0160",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0160.wav",
+    "transcript": "Invece nell'adulto abbiamo tutti i denti,in tutto 32",
+    "duration_sec": 4.31,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0160_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo03_chunk_0079",
+    "audio_path": "data/synthetic_audio/maxillo03_chunk_0079.wav",
+    "transcript": "Il Professore risponde ad una domanda sul decorso post-operatorio, affermando che il gonfiore è il problema principale che si verifica in questi pazienti.",
+    "duration_sec": 10.443375,
+    "augmented_audio_path": "data/augmented_audio/maxillo03_chunk_0079_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0807",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0807.wav",
+    "transcript": "Controindicazioni alla chirurgia. - Età inferiore ai 12 anni - Condizioni generali sfavorevoli.",
+    "duration_sec": 9.185375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0807_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0058",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0058.wav",
+    "transcript": "3 4) Presenza di altri segni. Sal punto di vista ispettivo",
+    "duration_sec": 6.2946875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0058_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0462",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0462.wav",
+    "transcript": "e poi si fa una ricostruzione mandibolare bloccando la fibula con placche di osteosintesi in titanio.",
+    "duration_sec": 7.19,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0462_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1802",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1802.wav",
+    "transcript": "poi scheletrizzazione del mento e della mandibola atrofica, vengono posizionati già gli impianti per quello che può essere l'altezza giusta, non vengono completamente sommersi nell'osso.",
+    "duration_sec": 12.203375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1802_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1349",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1349.wav",
+    "transcript": "Segmentazione del mascellare. Una volta che abbiamo tirato giù il mascellare (quindi abbiamo fatto la LeFort 1 con la down fracture)",
+    "duration_sec": 9.281375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1349_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1579",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1579.wav",
+    "transcript": "- Divergenti: sono più difficili delle radici convergenti. Conviene tagliare la corona e poi dividere ulteriormente le radici quindi estrarre il dente in tre pezzi sennò diventa impossibile.",
+    "duration_sec": 14.5186875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1579_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0261",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0261.wav",
+    "transcript": "ma devo cambiare il tipo di intervento (perché farei un intervento inutile, che non funziona).",
+    "duration_sec": 5.8886875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0261_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0398",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0398.wav",
+    "transcript": ", quindi possiamo avere polmoniti e broncopolmoniti secondarie). ✓ Alitosi ✓ Stanchezza ✓ Otalgia, pressione o pienezza ✓ Febbre Si dividono in: - Acuta: Da 1 a 4 settimane.",
+    "duration_sec": 16.6626875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0398_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo02_chunk_0065",
+    "audio_path": "data/synthetic_audio/maxillo02_chunk_0065.wav",
+    "transcript": "Il trattamento non conservativo è chirurgico e prevede l’esposizione della frattura e la sua riduzione, seguite da stabilizzazioni con placche e viti.",
+    "duration_sec": 9.931375,
+    "augmented_audio_path": "data/augmented_audio/maxillo02_chunk_0065_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0190",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0190.wav",
+    "transcript": "oppure microglossia (nelle sindromi cranio-facciali) - Motilità: è anche importante per valutare anche problematiche neurologiche: paralisi dell’ipoglosso e ipercinesie (che possono comunque abbracciare anche la sfera psichica).",
+    "duration_sec": 16.619375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0190_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0764",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0764.wav",
+    "transcript": "La TC evidenzia una frattura bisinfisaria con una dislocazione importante, tant’è che la paziente era stata sottoposta a tracheostomia.",
+    "duration_sec": 11.1366875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0764_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0459",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0459.wav",
+    "transcript": "In alcuni casi si è costretti a fare delle resezioni importanti di frammenti ossei: a volte si è costretti a resecare un emimandibola in lesioni molto grandi→ si fanno delle ricostruzioni con delle placche di osteosintesi oppure in alcuni casi con un lembo microvascolare di fibula.",
+    "duration_sec": 16.758,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0459_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0162",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0162.wav",
+    "transcript": ", il secondo al dente (da 1 a 8)→ esempio: Incisivo centrale dell’arcata superiore di sinistra è l’11, l’incisivo laterale è il 12, il canino è il 13.",
+    "duration_sec": 12.438,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0162_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0503",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0503.wav",
+    "transcript": "Può avere un'associazione con la sindrome di Gorlin Goltz o sindrome nevo basocellulare: è caratterizzata da cheratocisti cisti multiple e nevi basocellulari cutanei.",
+    "duration_sec": 12.342,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0503_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1259",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1259.wav",
+    "transcript": "Su tale radiografia si applica un foglio di acetato.",
+    "duration_sec": 4.822,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1259_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1023",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1023.wav",
+    "transcript": "Gli ematomi retrobulbari possono essere: - Focali: c’è proprio una raccolta, è più semplice il drenaggio perché si entra nell'orbita dietro l'occhio e si fa una evacuazione.",
+    "duration_sec": 11.467375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1023_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2328",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2328.wav",
+    "transcript": "quindi è facile che si instauri una candida. Controllo della candidosi: lo facciamo col bicarbonato di sodio, con la nistatina, anfotericina B (sospensione per os), a volte con imidazolici sistemici.",
+    "duration_sec": 16.4706875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2328_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2147",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2147.wav",
+    "transcript": "quindi arteria e vena e viene anastomizzato a dei vasi del collo→ è un lembo vitale (a differenza dell’innesto).",
+    "duration_sec": 11.979375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2147_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo01_chunk_0079",
+    "audio_path": "data/synthetic_audio/maxillo01_chunk_0079.wav",
+    "transcript": "CHIRURGIA RICOSTRUTTIVA Bisogna effettuare la ricostruzione con dei tessuti che siano il più possibile simili a quelli demoliti, quindi i deficit cutanei con dei tessuti cutanei",
+    "duration_sec": 14.0166875,
+    "augmented_audio_path": "data/augmented_audio/maxillo01_chunk_0079_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1317",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1317.wav",
+    "transcript": "la riposiziono sui modelli e poi devo riprodurre fedelmente questa posizione anche chirurgicamente, quindi durante l'intervento.",
+    "duration_sec": 9.75,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1317_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2481",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2481.wav",
+    "transcript": "perché abbiamo una arteria e una vena e poi abbiamo tutta una serie di vasi perforanti di tipo periosteo che mantengono il trofismo.",
+    "duration_sec": 8.534,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2481_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2226",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2226.wav",
+    "transcript": "ed è controindicato anche nei T estesi verso il pavimento della bocca, il pavimento orale, la gengiva, il fornice e la base della lingua.",
+    "duration_sec": 10.251375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2226_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1540",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1540.wav",
+    "transcript": "La cosa più importante per noi operatori è quella di verificare la distanza tra la radice del dente da estrarre e il nervo alveolare inferiore: questo è importante perché esistono delle condizioni anatomiche che potrebbero mettere a repentaglio la vitalità del nervo durante un'estrazione.",
+    "duration_sec": 18.4326875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1540_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1809",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1809.wav",
+    "transcript": "Comunque si fa la botola In questo caso il prelievo viene fatto dalla regione del ramo mandibolare, perché non serve tantissimo osso.",
+    "duration_sec": 10.1126875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1809_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0366",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0366.wav",
+    "transcript": "perché quando arrivano solitamente hanno già fatto terapia antibiotica magari già con due tipi di antibiotici→ esame colturale e antibiogramma non sono giustificati nelle infezioni minori.",
+    "duration_sec": 12.0646875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0366_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1861",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1861.wav",
+    "transcript": "cioè delle forme spurie: - Ugola bifida - Schisi sottomucosa: la schisi soltanto ossea ma la mucosa ha tenuto e quindi ha una conformazione praticamente normale.",
+    "duration_sec": 12.342,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1861_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1253",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1253.wav",
+    "transcript": "La maggior parte di questi pazienti devono comunque stare ortodonzia per allineare le arcate e predisporle alla chirurgia",
+    "duration_sec": 9.003375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1253_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1377",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1377.wav",
+    "transcript": "o Se invece devo portare in avanti la mandibola avrò un gap tra il frammento piccolo e il frammento grande della mandibola, e lo fisso con le placche.",
+    "duration_sec": 9.2806875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1377_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1732",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1732.wav",
+    "transcript": "in questo modo traziona verso il basso la lingua facendo in modo che non collabisce durante la notte.",
+    "duration_sec": 6.166,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1732_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0707",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0707.wav",
+    "transcript": "➢ RX in altre proiezioni. ➢ TC: si esegue subito quando il paziente entra in PS.",
+    "duration_sec": 8.353375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0707_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1836",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1836.wav",
+    "transcript": "Il prof se deve correggere dei piccoli difetti utilizzo una miscela di PRGF (derivato piastrinico) con dell'osso eterologo che mi permette di fare una rigenerazione buona, decente",
+    "duration_sec": 11.8406875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1836_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2132",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2132.wav",
+    "transcript": "Il concetto di radicalità chirurgica va applicato laddove possibile all'intera malattia neoplastica tecnicamente aggredibile e all'UNITÀ TUMORE PRIMITIVO-RETE LINFATICA→ il trattamento giusto non è soltanto il trattamento del tumore",
+    "duration_sec": 16.246,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2132_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo01_chunk_0071",
+    "audio_path": "data/synthetic_audio/maxillo01_chunk_0071.wav",
+    "transcript": "La diagnosi si fa attraverso l’agoaspirato, la RM e la clinica. Nell’adenoma pleomorfo si rimuove il tumore e il tessuto sano intorno (tranne se il tessuto sano è un nervo, ovvero il nervo facciale).",
+    "duration_sec": 15.9586875,
+    "augmented_audio_path": "data/augmented_audio/maxillo01_chunk_0071_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo01_chunk_0088",
+    "audio_path": "data/synthetic_audio/maxillo01_chunk_0088.wav",
+    "transcript": "tubolati, ad isola - Movimento: lembi di trasposizione, rotazione, avanzamento - Vascolarizzazione: assiale, random - Composizione: lembi semplici, composti Questi sono alcuni esempi.",
+    "duration_sec": 26.507375,
+    "augmented_audio_path": "data/augmented_audio/maxillo01_chunk_0088_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2407",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2407.wav",
+    "transcript": "quindi abbiamo bisogno di caratteristiche del sito ricevente che fanno attecchire il lembo",
+    "duration_sec": 5.1526875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2407_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0438",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0438.wav",
+    "transcript": "in questo caso parliamo di osteonecrosi da bifosfonati. - Altri segni clinici gia visti per ascessi e flemmoni: ascesso cutaneo e orale con mucosa eritematosa, il trisma",
+    "duration_sec": 14.38,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0438_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo03_chunk_0017",
+    "audio_path": "data/synthetic_audio/maxillo03_chunk_0017.wav",
+    "transcript": "Le immagini sottostanti mostrano un’analisi del viso sia frontale del terzo inferiore sia di profilo.",
+    "duration_sec": 7.3286875,
+    "augmented_audio_path": "data/augmented_audio/maxillo03_chunk_0017_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2248",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2248.wav",
+    "transcript": "SVUOTAMENTI DEL COLLO La stadiazione dei linfonodi laterocervicali rappresenta un importante fattore prognostico per la valutazione delle neoplasie delle vie aeree",
+    "duration_sec": 9.931375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2248_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1275",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1275.wav",
+    "transcript": "❖ Overjet incisivo: è la distanza sagittale tra i bordi incisali superiori e inferiori misurata sul piano occlusale.",
+    "duration_sec": 8.2566875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1275_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2305",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2305.wav",
+    "transcript": "Svuotamento bilaterale dove a sinistra è stato fatto una MRND quindi un funzionale, e a destra invece un sopra omoioideo in monoblocco con la mandibola.",
+    "duration_sec": 11.979375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2305_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1065",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1065.wav",
+    "transcript": "EPISTASSI: può essere curata con un tamponamento anteriore o posteriore",
+    "duration_sec": 5.238,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1065_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0805",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0805.wav",
+    "transcript": "Lastra di controllo, in cui si vedono placca e viti. Accesso endoscopico: scheletrizzazione per via intraorale e posizionamento di placche per via intra ed extraorale.",
+    "duration_sec": 12.897375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0805_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0295",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0295.wav",
+    "transcript": "8.",
+    "duration_sec": 1.3446875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0295_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0746",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0746.wav",
+    "transcript": "perché anche se trattiamo chirurgicamente le fratture poi abbiamo la necessità di guidare con gli elastici l’occlusione dentaria.",
+    "duration_sec": 8.822,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0746_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0423",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0423.wav",
+    "transcript": "Effetti indesiderati:  Sintomi simil-influenzali (febbre, dolori ossei, artralgia)  Ipofosfatemia  Ipercreatininemia  Pancitopenia  Bradicardia  Osteonecrosi dei mascellari",
+    "duration_sec": 17.9206875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0423_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0118",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0118.wav",
+    "transcript": "6 ESAME OBIETTIVO ENDORALE Bisogna sempre guardare all'interno del cavo orale, perché a volte ci sono delle situazioni che possono dare delle problematiche e passare misconosciute.",
+    "duration_sec": 10.955375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0118_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2430",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2430.wav",
+    "transcript": "Le anastomosi sono delle microanastomosi che vengono fatte di solito con l'utilizzo del microscopio operatorio con degli ingrandimenti 4x-5x-6x.",
+    "duration_sec": 12.0646875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2430_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1842",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1842.wav",
+    "transcript": "quindi tutte le malformazioni partono da un difetto a livello di uno dei tre archi branchiali.",
+    "duration_sec": 6.678,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1842_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2263",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2263.wav",
+    "transcript": "- Poi abbiamo i livelli 7 e altre stazioni, che sono in suboccipitali, retrofaringe, parafaringe, buccinatori, preauricolari.",
+    "duration_sec": 10.859375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2263_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo03_chunk_0019",
+    "audio_path": "data/synthetic_audio/maxillo03_chunk_0019.wav",
+    "transcript": "distanza interlabiale 1 – 5 mm e lunghezza del labbro inferiore 42 – 48 mm.",
+    "duration_sec": 6.955375,
+    "augmented_audio_path": "data/augmented_audio/maxillo03_chunk_0019_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1553",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1553.wav",
+    "transcript": "La panoramica è un esame che non ci permette di vedere in maniera tridimensionale la regione ma la vediamo in maniera bidimensionale; in alcuni casi",
+    "duration_sec": 9.142,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1553_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0054",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0054.wav",
+    "transcript": "dalla regione glabellare alla regione della spina nasale anteriore • Terzo inferiore, dalla spina nasale anteriore alla regione submentale → Nel paziente normale questi terzi devono equivalersi.",
+    "duration_sec": 16.523375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0054_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo02_chunk_0032",
+    "audio_path": "data/synthetic_audio/maxillo02_chunk_0032.wav",
+    "transcript": "L’epidemiologia dipende da vari fattori.",
+    "duration_sec": 3.5206875,
+    "augmented_audio_path": "data/augmented_audio/maxillo02_chunk_0032_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2061",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2061.wav",
+    "transcript": "però l'invasione perineurale è tipica di alcuni tumori di ghiandole salivari tipo ad esempio il carcinoma adenoideo cistico, però si verifica anche in questi tipi di tumore.",
+    "duration_sec": 13.1846875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2061_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1214",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1214.wav",
+    "transcript": "Fattori ambientali. • Postura e pressione dei tessuti molli (postura della lingua",
+    "duration_sec": 7.276,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1214_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1294",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1294.wav",
+    "transcript": ", della fessura pterigo-palatina) e CF - A. Valore normale: 53°± 3°; Aumenta di 0,4° ogni anno di crescita.",
+    "duration_sec": 13.27,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1294_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1238",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1238.wav",
+    "transcript": ", quindi la chirurgia delle deformità facciali.",
+    "duration_sec": 3.755375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1238_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0446",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0446.wav",
+    "transcript": "A meno che il paziente ha un'aspettativa di vita molto bassa, e ha delle problematiche nel cavo orale ed è costretto comunque ad usare bifosfonati",
+    "duration_sec": 9.7926875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0446_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1308",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1308.wav",
+    "transcript": "I modelli in gesso delle arcate dentarie vengono montati su un articolatore che simula la posizione dei mascellari.",
+    "duration_sec": 7.883375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1308_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0781",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0781.wav",
+    "transcript": "colluttazione) - Fratture da energia cinetica dovute all’urto del soggetto in movimento contro un oggetto fermo (caduta a terra) - Fratture da energia cinetica come somma di forze al movimento sia del soggetto traumatizzato che dell’oggetto che traumatizza (incidenti automobilistici",
+    "duration_sec": 22.614,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0781_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2423",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2423.wav",
+    "transcript": "a noi ne serve una ma a volte non è facile trovarla e quindi abbiamo un ventaglio di arterie del collo e della faccia che possiamo andare a utilizzare.",
+    "duration_sec": 9.046,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2423_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1123",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1123.wav",
+    "transcript": "Il grasso addominale è materiale di scelta perché resistente alle infezioni, si riassorbe lentamente e viene sostituito gradualmente da tessuto fibroso.",
+    "duration_sec": 10.7206875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1123_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2187",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2187.wav",
+    "transcript": "l'altra metà è la ricostruzione con lembo cutaneo tipo cinese. Lo svuotamento linfonodale è contemplato.",
+    "duration_sec": 10.3906875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2187_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0397",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0397.wav",
+    "transcript": "FATTORI MAGGIORI: ✓ Dolore facciale/pressione ✓ Congestione facciale/pienezza ✓ Drenaggio nasale mucopurulento ✓ Gocciolamento del naso ✓ Ostruzione nasale o occlusione dei meati ✓ Iposmia o anosmia ✓ Febbre (solo nelle sinusiti acute) ✓ Purulenza FATTORI MINORI: ✓ Cefalea ✓ Dolore dentario mascellare ✓ Tosse (nelle sinusiti ci può essere una caduta attraverso il meato medio verso il basso del pus",
+    "duration_sec": 27.4886875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0397_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2011",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2011.wav",
+    "transcript": "Aspetti macroscopici.",
+    "duration_sec": 2.923375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2011_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0962",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0962.wav",
+    "transcript": "➢ APPROCCIO ALLA SUTURA FRONTO-ZIGOMATICA: le incisioni si eseguono nella palpebra superiore.",
+    "duration_sec": 11.094,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0962_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0320",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0320.wav",
+    "transcript": "Fortunatamente l’ascessualizzazione e la fistolizzazione oppure l'infezione diffusa si vedono raramente.",
+    "duration_sec": 7.467375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0320_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2294",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2294.wav",
+    "transcript": "• SOPRAOMOIOIDEO: tra i selettivi è la più praticata, consiste nella rimozione enblock della loggia sopradigastrica comprendendo le exeresi della ghiandola sottomandibolare",
+    "duration_sec": 11.3286875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2294_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2239",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2239.wav",
+    "transcript": "- Via transmandibolare demolitiva: è definita commando",
+    "duration_sec": 4.9606875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2239_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0264",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0264.wav",
+    "transcript": "Gli agenti interessati possono essere di tutti i tipi, sia gram+ che gram-: la bocca non è un sito pulito",
+    "duration_sec": 7.7446875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0264_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo03_chunk_0053",
+    "audio_path": "data/synthetic_audio/maxillo03_chunk_0053.wav",
+    "transcript": "Esiste anche l’osteotomia subapicale posteriore che serve per chiudere la parte posteriore.",
+    "duration_sec": 6.955375,
+    "augmented_audio_path": "data/augmented_audio/maxillo03_chunk_0053_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo01_chunk_0020",
+    "audio_path": "data/synthetic_audio/maxillo01_chunk_0020.wav",
+    "transcript": "Tutto viene progettato prima, in sala operatoria andiamo già con queste guide. Vengono realizzate in collaborazione con degli ingegneri.",
+    "duration_sec": 9.324,
+    "augmented_audio_path": "data/augmented_audio/maxillo01_chunk_0020_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2460",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2460.wav",
+    "transcript": "Isolamento dell'arteria e della vena, allestimento del lembo, si segue il peduncolo vascolare rendendolo più lungo che si può, poi il lembo è preparato e pronto per essere staccato.",
+    "duration_sec": 12.5766875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2460_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0325",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0325.wav",
+    "transcript": "- Aumento di mobilità dell'elemento dentario - Allargamento dello spazio parodontale alla panoramica 2) INFILTRAZIONE ENDOSTALE: l'ascesso ha superato il periapice",
+    "duration_sec": 10.6246875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0325_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1941",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1941.wav",
+    "transcript": "anche se negli ultimi anni anche in questo caso si è visto una inversione di tendenza.",
+    "duration_sec": 6.123375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1941_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo01_chunk_0011",
+    "audio_path": "data/synthetic_audio/maxillo01_chunk_0011.wav",
+    "transcript": "La chirurgia compartimentale si fa quando il DOI è ≥ 10 mm, in un tumore stadiato come T3 o T4.",
+    "duration_sec": 9.654,
+    "augmented_audio_path": "data/augmented_audio/maxillo01_chunk_0011_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1544",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1544.wav",
+    "transcript": "ed è sopra il periostio che riveste la mandibola, quindi tecnicamente il chirurgo deve sapere cosa deve fare e soprattutto non deve andare in una zona in cui è pericoloso per il nervo linguale.",
+    "duration_sec": 12.9926875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1544_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0930",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0930.wav",
+    "transcript": "che spinge l'occhio verso l'esterno, viene definito esoftalmo postraumatico.",
+    "duration_sec": 7.0086875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0930_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1286",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1286.wav",
+    "transcript": "Il rapporto tra il punto A e la linea di McNamara che ha una normalità di 0 ± 2→ ci dice in che posizione è il mascellare.",
+    "duration_sec": 9.515375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1286_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2290",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2290.wav",
+    "transcript": "il nervo ipoglosso ed il nervo linguale→ gruppo linfatici interessati primo livello.",
+    "duration_sec": 5.5686875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2290_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1669",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1669.wav",
+    "transcript": "Movimenti toraco-addominali. → La POLISONNOGRAFIA va a misurare tutte questi esami citati. Valutazione ORL.",
+    "duration_sec": 12.098,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1669_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1775",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1775.wav",
+    "transcript": "anche se respirano bene→ ormai hanno risolto il loro problema e focalizzano l'attenzione su una piccola complicanza che è inevitabile.",
+    "duration_sec": 9.1846875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1775_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0987",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0987.wav",
+    "transcript": "Un oggetto forma due immagini retiniche (una per occhio) in punti corrispondenti. Le immagini percepite dalle retine vengono integrate a livello corticale mediante il processo di fusione.",
+    "duration_sec": 13.548,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0987_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0515",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0515.wav",
+    "transcript": "in seguito al passaggio di germi e delle loro tossine nel periapice",
+    "duration_sec": 4.406,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0515_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2482",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2482.wav",
+    "transcript": "La fibula che viene modellata a forma di emimandibola, poi il posizionamento prevede l’utilizzo di mezzi di sintesi (placche) che servono per regolarizzare e fissare la fibula",
+    "duration_sec": 10.443375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2482_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo02_chunk_0004",
+    "audio_path": "data/synthetic_audio/maxillo02_chunk_0004.wav",
+    "transcript": "La necessità di sospendere i bifosfonati risulta essere più semplice da seguire nelle donne in menopausa",
+    "duration_sec": 6.955375,
+    "augmented_audio_path": "data/augmented_audio/maxillo02_chunk_0004_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2042",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2042.wav",
+    "transcript": "La frequenza e importanza della diffusione linfonodale varia a seconda di: - Localizzazione del tumore primitivo (pavimento, lingua",
+    "duration_sec": 8.9606875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2042_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1127",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1127.wav",
+    "transcript": "Frattura parete anteriore del seno frontale, composta e scomposta. Frattura della parete posteriore seno frontale composta e scomposta.",
+    "duration_sec": 11.2226875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1127_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0414",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0414.wav",
+    "transcript": "rimuovere tutte le fasce e cercare di fare pulizia. Dente cariato nel terzo quadrante, con una lesione osteolitica della radice distale→ esito con una fascite di tipo necrotizzante.",
+    "duration_sec": 14.6146875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0414_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1351",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1351.wav",
+    "transcript": "Le osteotomie sagittali servono quando dobbiamo fare delle correzioni ulteriori che non si possono fare è soltanto con la LeFort o con la preparazione ortodontica preliminare",
+    "duration_sec": 11.371375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1351_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2153",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2153.wav",
+    "transcript": ", verso il basso, o il mascellare superiore o la mandibola. - pianificare il tipo di approccio chirurgico, l'eventuale trattamento linfonodale e l'eventuale ricostruzione locale o con lembi.",
+    "duration_sec": 14.337375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2153_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0915",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0915.wav",
+    "transcript": "sfenoide che assieme ad esso contribuiscono a formare l'orbita. Possiamo considerare l'osso zigomatico come il paraurti naturale del nostro viso",
+    "duration_sec": 16.236,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0915_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1746",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1746.wav",
+    "transcript": "Questo è l'intervento che ha i risultati migliori nell'ambito delle OSAS perché andiamo a modificare le strutture ossee e quindi abbiamo comunque un risultato a lungo termine più veritiero",
+    "duration_sec": 10.763375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1746_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0485",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0485.wav",
+    "transcript": "▪ Cisti odontogena calcificante.",
+    "duration_sec": 3.286,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0485_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo03_chunk_0067",
+    "audio_path": "data/synthetic_audio/maxillo03_chunk_0067.wav",
+    "transcript": "Ogni movimento chirurgico effettuato ha certe complicazioni: per esempio, in caso di osteotomia verticale del ramo con avanzamento importante, può formarsi il cosiddetto notching.",
+    "duration_sec": 12.022,
+    "augmented_audio_path": "data/augmented_audio/maxillo03_chunk_0067_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2258",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2258.wav",
+    "transcript": "cioè si cominciò a fare un po' di ordine per quello che riguardano il livelli di cui ne abbiamo parlato.",
+    "duration_sec": 5.75,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2258_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo01_chunk_0007",
+    "audio_path": "data/synthetic_audio/maxillo01_chunk_0007.wav",
+    "transcript": "cercare di dare la migliore qualità di vita possibile ai pazienti. Quello di chirurgia compartimentale è un concetto molto importante che si è sviluppato negli ultimi anni.",
+    "duration_sec": 12.609375,
+    "augmented_audio_path": "data/augmented_audio/maxillo01_chunk_0007_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0938",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0938.wav",
+    "transcript": ", verso l'alto (riferisce di vedere doppio verso l'alto). • Limitata apertura del cavo orale, soprattutto se c’è frattura dell’arco zigomatico.",
+    "duration_sec": 11.18,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0938_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2275",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2275.wav",
+    "transcript": "• Asportare radicalmente la rete linfatica del collo dal bordo inferiore della mandibola in alto, alla clavicola in basso, dal bordo laterale del muscolo sternocleidoioideo all'osso ioide",
+    "duration_sec": 14.155375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2275_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2431",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2431.wav",
+    "transcript": "Le anastomosi possono essere: • Termino-terminali: vengono anastomizzate le arterie e le vene in via terminale, dove finisce una e dove finisce l'altra.",
+    "duration_sec": 12.854,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2431_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1278",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1278.wav",
+    "transcript": "da cui noi abbiamo preso alcuni spunti e abbiamo fatto alcune modifiche. Rapporti maxillo-mandibolari. Fatto questo andiamo tracciare le linee di riferimento, perché dobbiamo disegnare il tracciato.",
+    "duration_sec": 24.215375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1278_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0886",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0886.wav",
+    "transcript": "✓ SINTOMATOLOGIA SPECIFICA: malocclusione traumatica (precontatto posteriore con morso aperto anteriore) o un rapporto incisale testa-testa.",
+    "duration_sec": 10.027375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0886_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1041",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1041.wav",
+    "transcript": "Lamina di dura madre: è una piattina bianca che viene posizionata a ricostruire il pavimento dell'orbita",
+    "duration_sec": 6.4966875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1041_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1949",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1949.wav",
+    "transcript": "e questo sta a significare che esiste comunque una 114 predisposizione genetica che porta ha una ha un deficit di risposta immunitaria(tutti noi produciamo tutti i giorni cellule tumorali",
+    "duration_sec": 14.763375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1949_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0355",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0355.wav",
+    "transcript": "ad esempio se c'è infiltrazione del collo ci può essere anche malacia dei vasi del collo quindi diventa impegnativo.",
+    "duration_sec": 8.2566875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0355_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1402",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1402.wav",
+    "transcript": "PROGNATISMO MANDIBOLARE Nel prognatismo mandibolare sono presenti solitamente: • Compensazioni dentali • Modesta discrepanza trasversale (anche se quasi sempre c'è una riduzione del diametro trasversale del mascellare superiore) • Raramente invece sono presenti problemi verticali (quindi un normale rapporto denti superiori/labbro superiore).",
+    "duration_sec": 24.139375,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1402_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0270",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0270.wav",
+    "transcript": "➢ Contaminazione dell'apice per via retrograda: si verifica fondamentalmente per un motivo iatrogeno→ una devitalizzazione fatta male o una cura dentaria fatta male",
+    "duration_sec": 12.0646875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0270_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0836",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0836.wav",
+    "transcript": "casualmente la bambina aveva un apparecchio ortodontico: sono stati espulsi due incisivi e sono rimasti attaccati all’apparecchio e questo ha semplificato un pochettino il riposizionamento.",
+    "duration_sec": 11.6486875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0836_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_0926",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_0926.wav",
+    "transcript": "Fratture di tipo 4: c’è una comminuzione importante.",
+    "duration_sec": 4.6406875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_0926_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_2067",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_2067.wav",
+    "transcript": " Sopravvivenza assoluta relativa agli N, che scende praticamente tantissimo se c'è la rottura capsulare.",
+    "duration_sec": 6.5926875,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_2067_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  },
+  {
+    "id": "maxillo04_chunk_1186",
+    "audio_path": "data/synthetic_audio/maxillo04_chunk_1186.wav",
+    "transcript": "Il canino superiore si colloca in una posizione più mesiale rispetto ad un rapporto di prima classe→ il canino superiore è in avanti rispetto al canino inferiore e quindi aumenta la posizione anteriore del mascellare superiore.",
+    "duration_sec": 13.974,
+    "augmented_audio_path": "data/augmented_audio/maxillo04_chunk_1186_aug.wav",
+    "applied_augmentations": [
+      "Reverb",
+      "BackgroundNoise",
+      "BandPass",
+      "GainTransition"
+    ]
+  }
+]

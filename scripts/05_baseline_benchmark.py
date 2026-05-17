@@ -8,6 +8,7 @@ e registra il WER standard e Medical WER come baseline da abbattere.
 import argparse
 import json
 import os
+import random
 import statistics
 import sys
 from datetime import datetime
@@ -40,9 +41,11 @@ def run_benchmark(
     model: str = "mlx-community/whisper-small-mlx",
     medical_weight: float = 3.0,
     use_wandb: bool = True,
+    num_samples: int = 0,
+    seed: int = 42,
 ) -> dict:
     """
-    Esegue il benchmark zero-shot sull'intero manifest.
+    Esegue il benchmark zero-shot sul manifest (o su un subset casuale).
 
     Args:
         manifest_path: Path al manifest JSON/JSONL con ground truth.
@@ -51,6 +54,8 @@ def run_benchmark(
         model: Nome/path del modello MLX Whisper.
         medical_weight: Peso per gli errori sui termini medici.
         use_wandb: Se True, logga i risultati su W&B.
+        num_samples: Numero di campioni da processare (0 = tutti).
+        seed: Seed per la riproducibilità del campionamento casuale.
 
     Returns:
         Report completo come dizionario.
@@ -62,6 +67,15 @@ def run_benchmark(
             entries = json.loads(content)
         else:
             entries = [json.loads(line) for line in content.splitlines() if line.strip()]
+
+    # Sampling casuale se richiesto
+    total_available = len(entries)
+    if num_samples and 0 < num_samples < total_available:
+        random.seed(seed)
+        entries = random.sample(entries, num_samples)
+        print(f"🎲 Campionamento casuale: {num_samples}/{total_available} campioni (seed={seed}).")
+    elif num_samples >= total_available:
+        print(f"⚠️  num_samples ({num_samples}) >= totale ({total_available}): si processano tutti.")
 
     # Carica glossario medico
     medical_terms = load_medical_terms(medical_terms_path)
@@ -156,6 +170,8 @@ def run_benchmark(
         "model": model,
         "manifest": manifest_path,
         "num_samples": len(file_results),
+        "total_available": total_available,
+        "sampling_seed": seed if (num_samples and 0 < num_samples < total_available) else None,
         "aggregate": aggregate,
         "file_results": file_results,
     }
@@ -224,6 +240,18 @@ def main():
         action="store_true",
         help="Disabilita il logging su Weights & Biases.",
     )
+    parser.add_argument(
+        "-n", "--num-samples",
+        type=int,
+        default=0,
+        help="Numero di audio da campionare casualmente (0 = tutti, default: 0).",
+    )
+    parser.add_argument(
+        "--seed",
+        type=int,
+        default=42,
+        help="Seed per la riproducibilità del campionamento casuale (default: 42).",
+    )
     args = parser.parse_args()
 
     run_benchmark(
@@ -233,6 +261,8 @@ def main():
         model=args.model,
         medical_weight=args.medical_weight,
         use_wandb=not args.no_wandb,
+        num_samples=args.num_samples,
+        seed=args.seed,
     )
 
 
