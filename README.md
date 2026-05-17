@@ -4,7 +4,7 @@ Pipeline per il fine-tuning di OpenAI Whisper, specializzata nel riconoscimento 
 
 ## 📋 Panoramica
 
-La pipeline si compone di **7 step** sequenziali:
+La pipeline si compone di **7 step** sequenziali, con supporto opzionale per il training cloud su GPU NVIDIA:
 
 | Step | Script | Descrizione |
 |------|--------|-------------|
@@ -16,6 +16,7 @@ La pipeline si compone di **7 step** sequenziali:
 | 5 | `scripts/05_baseline_benchmark.py` | Benchmark zero-shot con mlx-whisper |
 | 6 | `scripts/06_preprocess_mlx.py` | Estrazione log-Mel + split train/val/test |
 | 7 | `scripts/07_finetune_mlx.py` | Fine-tuning LoRA nativo MLX con W&B |
+| ☁️ | `scripts_cloud/finetune_pytorch.py` | Fine-tuning LoRA PyTorch su GPU cloud (RunPod) |
 
 ## 📁 Struttura del Progetto
 
@@ -38,6 +39,13 @@ Whisper/
 │   ├── preprocessed/             # Feature log-Mel (train/val/test)
 │   ├── medical_terms.txt         # Glossario termini medici
 │   └── augmentation/             # Pipeline augmentation
+├── scripts_cloud/                # ☁️ Fine-tuning PyTorch per GPU cloud
+│   ├── finetune_pytorch.py       # Training loop (Seq2SeqTrainer + PEFT)
+│   ├── dataset.py                # Custom Dataset per .npz
+│   ├── metrics.py                # WER + Medical WER standalone
+│   ├── training_config.yaml      # Config per RunPod L4
+│   ├── requirements.txt          # Dipendenze PyTorch 2.4.0
+│   └── deploy_runpod.sh          # Script di deploy automatizzato
 ├── outputs/                      # Adapter LoRA + report
 ├── tests/                        # Smoke test per ogni script
 ├── specs/                        # Spec-Driven Development docs
@@ -196,10 +204,95 @@ PYTHONPATH=. uv run python scripts/06_preprocess_mlx.py \
     --output-dir data/preprocessed
 ```
 
-### Step 6 — Fine-Tuning LoRA
+### Step 6 — Fine-Tuning LoRA (locale, MLX)
 ```bash
 PYTHONPATH=. uv run python scripts/07_finetune_mlx.py --config training_config.yaml
 ```
+
+---
+
+### ☁️ Step 6 (alternativo) — Fine-Tuning su GPU Cloud (RunPod)
+
+Per fine-tunare modelli più grandi (`whisper-medium`, `whisper-large-v3`) che non entrano nella RAM di un Mac, è disponibile una pipeline **PyTorch** pensata per GPU NVIDIA cloud.
+
+#### Prerequisiti
+
+- Account [RunPod](https://runpod.io) con un pod GPU attivo (consigliato: **L4 24GB VRAM**)
+- Template pod: **RunPod PyTorch 2.4.0** (CUDA 12.1)
+- I dati preprocessati dallo Step 5 (`data/preprocessed/`)
+
+#### 1. Copia i dati sul pod
+
+```bash
+# Da locale verso il pod RunPod via rsync (più efficiente)
+rsync -avz --progress \
+  --include='scripts_cloud/***' \
+  --include='data/preprocessed/***' \
+  --include='data/medical_terms.txt' \
+  --exclude='*' \
+  ./ root@<POD-IP>:/workspace/whisper-finetune/ \
+  -e 'ssh -p <PORT>'
+
+# Oppure via scp (alternativa)
+scp -P <PORT> -r scripts_cloud/ root@<POD-IP>:/workspace/whisper-finetune/
+scp -P <PORT> -r data/preprocessed/ root@<POD-IP>:/workspace/whisper-finetune/data/
+scp -P <PORT> data/medical_terms.txt root@<POD-IP>:/workspace/whisper-finetune/data/
+```
+
+#### 2. SSH nel pod e lancia il training
+
+```bash
+ssh root@<POD-IP> -p <PORT>
+
+# Setup W&B (una tantum)
+export WANDB_API_KEY=<your-api-key>
+
+# Lancia il training con lo script di deploy
+cd /workspace/whisper-finetune
+bash scripts_cloud/deploy_runpod.sh
+```
+
+Lo script `deploy_runpod.sh` automaticamente:
+1. Verifica la GPU e i dati
+2. Installa le dipendenze da `requirements.txt`
+3. Lancia `finetune_pytorch.py` con la config YAML
+
+#### 3. Override da CLI
+
+Puoi passare qualsiasi parametro direttamente:
+
+```bash
+# Usa whisper-large-v3 con patience diversa
+bash scripts_cloud/deploy_runpod.sh \
+  --model openai/whisper-large-v3 \
+  --es-patience 5 \
+  --es-metric eval_medical_wer
+
+# Oppure lancia direttamente lo script Python
+cd scripts_cloud
+python finetune_pytorch.py \
+  --config training_config.yaml \
+  --model openai/whisper-medium \
+  --no-early-stopping
+```
+
+#### 4. Recupera i risultati
+
+```bash
+# Dal tuo Mac
+scp -P <PORT> -r root@<POD-IP>:/workspace/whisper-finetune/outputs_cloud/ ./outputs_cloud/
+```
+
+#### Configurazione Cloud (`scripts_cloud/training_config.yaml`)
+
+| Parametro | Default | Note |
+|-----------|---------|------|
+| `model.name` | `openai/whisper-medium` | Qualsiasi Whisper HuggingFace |
+| `training.fp16` | `true` | Mixed precision per VRAM |
+| `training.gradient_checkpointing` | `true` | Riduce VRAM ~40% |
+| `training.gradient_accumulation_steps` | `2` | Effective batch = 8 |
+| `early_stopping.patience` | `3` | Epoche senza miglioramento |
+| `early_stopping.metric` | `eval_loss` | `eval_loss` o `eval_medical_wer` |
 
 ### ⚙️ Configurazione Training
 
