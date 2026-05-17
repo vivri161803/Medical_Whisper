@@ -25,9 +25,23 @@
 
 set -euo pipefail
 
-WORKSPACE="/workspace/whisper-finetune"
+WORKSPACE="/workspace/Medical_Whisper"
 SCRIPTS_DIR="${WORKSPACE}/scripts_cloud"
 VENV_DIR="${WORKSPACE}/.venv"
+
+# Auto-shutdown del pod in caso di errore o completamento
+cleanup() {
+    local exit_code=$?
+    if [ -n "${RUNPOD_POD_ID:-}" ]; then
+        echo ""
+        echo "⏳ Attesa 30s per completare sync W&B..."
+        sleep 30
+        echo "🔌 Spegnimento pod RunPod (${RUNPOD_POD_ID})..."
+        runpodctl stop pod "${RUNPOD_POD_ID}" || true
+    fi
+    exit $exit_code
+}
+trap cleanup EXIT
 
 echo "============================================================"
 echo "🚀 RunPod Setup — Whisper LoRA Fine-Tuning"
@@ -96,15 +110,20 @@ echo "🎯 Lancio fine-tuning..."
 echo "============================================================"
 echo ""
 
-cd "${SCRIPTS_DIR}"
+python "${SCRIPTS_DIR}/finetune_pytorch.py" \
+    --config "${SCRIPTS_DIR}/training_config.yaml" \
+    "$@" || true
 
-python finetune_pytorch.py \
-    --config training_config.yaml \
-    "$@"
+TRAIN_EXIT_CODE=${PIPESTATUS[0]:-$?}
 
 # --- 8. Risultati ---
 echo ""
 echo "============================================================"
+if [ $TRAIN_EXIT_CODE -eq 0 ]; then
+    echo "✅ Training completato con successo!"
+else
+    echo "❌ Training terminato con errore (exit code: $TRAIN_EXIT_CODE)"
+fi
 echo "💾 Risultati salvati in: ${WORKSPACE}/outputs_cloud/"
 echo ""
 echo "Per scaricare i risultati sul tuo Mac:"

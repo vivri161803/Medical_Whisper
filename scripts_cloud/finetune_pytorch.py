@@ -23,10 +23,14 @@ import argparse
 import os
 import sys
 
+# Assicura che i moduli locali (dataset.py, metrics.py) siano trovabili
+# anche quando lo script è lanciato da una directory diversa.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 import torch
 import yaml
 import wandb
-from peft import LoraConfig, TaskType, get_peft_model
+from peft import LoraConfig, get_peft_model
 from transformers import (
     EarlyStoppingCallback,
     Seq2SeqTrainer,
@@ -116,21 +120,21 @@ def train(config: dict, cli_overrides: dict | None = None):
     print(f"\n🖥️  Device: {device}")
     if device.type == "cuda":
         print(f"   GPU: {torch.cuda.get_device_name(0)}")
-        print(f"   VRAM: {torch.cuda.get_device_properties(0).total_mem / 1e9:.1f} GB")
+        print(f"   VRAM: {torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB")
 
     # --- 2. Modello ---
     print(f"\n📦 Caricamento modello: {model_name}")
-    model = WhisperForConditionalGeneration.from_pretrained(
-        model_name,
-        torch_dtype=torch.float16 if use_fp16 else torch.float32,
-    )
+    model = WhisperForConditionalGeneration.from_pretrained(model_name)
 
     # Disabilita cache per training (richiesto da gradient checkpointing)
     model.config.use_cache = False
 
-    # Forza il decoder a generare in italiano
+    # Forza il decoder a generare in italiano (evita language detection in generate())
     model.config.forced_decoder_ids = None
     model.config.suppress_tokens = []
+    model.generation_config.language = language
+    model.generation_config.task = "transcribe"
+    model.generation_config.forced_decoder_ids = None
 
     if use_grad_ckpt:
         model.gradient_checkpointing_enable()
@@ -143,7 +147,6 @@ def train(config: dict, cli_overrides: dict | None = None):
         lora_alpha=lora_alpha,
         lora_dropout=lora_dropout,
         target_modules=target_modules,
-        task_type=TaskType.SEQ_2_SEQ_LM,
         bias="none",
     )
     model = get_peft_model(model, lora_config)

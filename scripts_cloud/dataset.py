@@ -73,18 +73,15 @@ class DataCollatorForWhisperNpz:
     - Sostituzione di 0-padding con -100 per ignorare nella loss
     """
 
-    def __init__(self, pad_token_id: int = -100, max_label_length: int = 448):
-        self.pad_token_id = pad_token_id
-        self.max_label_length = max_label_length
-
     def __call__(self, features: list[dict]) -> dict:
         # Stack mel — tutti hanno la stessa shape (80, 3000)
         input_features = torch.stack([f["input_features"] for f in features])
 
-        # Labels — già padded a 448 nei .npz, ma verifichiamo
+        # Labels — già padded a 448 nei .npz
         labels = torch.stack([f["labels"] for f in features])
 
         return {
             "input_features": input_features,
             "labels": labels,
         }
+
