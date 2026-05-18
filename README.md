@@ -262,7 +262,9 @@ Lo script `deploy_runpod.sh` automaticamente:
 Puoi passare qualsiasi parametro direttamente:
 
 ```bash
-# Usa whisper-large-v3 con patience diversa
+# Abilita spegnimento automatico del pod a script concluso
+export RUNPOD_POD_ID="<il-tuo-pod-id>"
+# Usa whisper-large-v3 con patience diversa (puoi anche modificare training_config.yaml)
 bash scripts_cloud/deploy_runpod.sh \
   --model openai/whisper-large-v3 \
   --es-patience 5 \
