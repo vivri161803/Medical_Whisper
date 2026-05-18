@@ -125,7 +125,3 @@ else
     echo "❌ Training terminato con errore (exit code: $TRAIN_EXIT_CODE)"
 fi
 echo "💾 Risultati salvati in: ${WORKSPACE}/outputs_cloud/"
-echo ""
-echo "Per scaricare i risultati sul tuo Mac:"
-echo "  scp -r root@<pod-ip>:${WORKSPACE}/outputs_cloud/ ./outputs_cloud_results/"
-echo "============================================================"
