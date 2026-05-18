@@ -4,7 +4,7 @@
 # Ottimizzato per RunPod L4 (24GB VRAM).
 
 model:
-  name: "openai/whisper-medium"  # openai/whisper-small | medium | large-v3
+  name: "openai/whisper-large-v2"  # openai/whisper-small | medium | large-v2
   language: "it"
 
 lora: # Conoscenza Finale = Vecchia Conoscenza + (Nuova Conoscenza * alpha/rank)
@@ -34,7 +34,7 @@ evaluation:
 
 data:
   preprocessed_dir: "data/preprocessed"
-  output_dir: "outputs_cloud"
+  output_dir: "outputs_cloud_large"
   seed: 42
 
 early_stopping:
@@ -48,3 +48,6 @@ wandb:
   entity: null
   run_name: null          # auto-generato se null
   tags: ["pytorch", "lora", "cloud", "runpod"]
+
+wandb_api:
+  key: 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
