@@ -48,6 +48,3 @@ wandb:
   entity: null
   run_name: null          # auto-generato se null
   tags: ["pytorch", "lora", "cloud", "runpod"]
-
-wandb_api:
-  key: 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
