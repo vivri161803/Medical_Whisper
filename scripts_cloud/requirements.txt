@@ -14,7 +14,7 @@ safetensors>=0.4.0
 # --- Data & Metrics ---
 numpy>=1.24.0,<2.0.0
 jiwer>=3.0.0
-datasets>=2.19.0
+datasets>=5.0.1
 
 # --- Logging & Tracking ---
 wandb>=0.17.0
